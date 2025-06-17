@@ -1,0 +1,94 @@
+/* public/style.css */
+body {
+    font-family: sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 2rem;
+    color: #333;
+}
+
+h1 {
+    color: #444;
+}
+
+form {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.test-list {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.test-list ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.test-list li {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+}
+
+.test-list li:last-child {
+    border-bottom: none;
+}
+
+.run-btn {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.run-btn:hover {
+    background: #218838;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}

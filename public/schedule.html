@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Schedule Tests</title>
+    <link rel="stylesheet" href="/style.css" />
+    <style>
+        .test-row {
+            margin-bottom: 12px;
+            padding: 8px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .test-name {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .test-link {
+            font-size: 0.9em;
+            color: #666;
+            text-decoration: underline;
+            display: block;
+            margin: 4px 0;
+        }
+
+        .next-run {
+            font-size: 0.9em;
+            color: #007700;
+            margin-left: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>🕒 Schedule Tests</h1>
+    <div id="scheduleList">Loading...</div>
+    <a href="/">← Back to Tests</a>
+
+    <script>
+        async function fetchTests() {
+            const res = await fetch('/tests');
+            return await res.json();
+        }
+
+        async function fetchNextRuns() {
+            const res = await fetch('/schedule/next-run');
+            return await res.json();
+        }
+
+        function formatDateTime(isoString) {
+            if (!isoString) return '—';
+            const dt = new Date(isoString);
+            return dt.toLocaleString();
+        }
+
+        function createTestRow(test, nextRun) {
+            const div = document.createElement('div');
+            div.className = 'test-row';
+
+            const label = document.createElement('label');
+            label.style.cursor = 'pointer';
+
+            const checkbox = document.createElement('input');
+            checkbox.type = 'checkbox';
+            checkbox.checked = test.scheduled;
+            checkbox.style.marginRight = '8px';
+
+            checkbox.addEventListener('change', async () => {
+                checkbox.disabled = true;
+                try {
+                    if (checkbox.checked) {
+                        await fetch(`/schedule/${encodeURIComponent(test.name)}`, { method: 'POST' });
+                        alert(`Scheduled test "${test.name}"`);
+                    } else {
+                        await fetch(`/schedule/${encodeURIComponent(test.name)}`, { method: 'DELETE' });
+                        alert(`Unscheduled test "${test.name}"`);
+                    }
+                    await refresh(); // Refresh the list to update next run times
+                } catch {
+                    alert('Failed to toggle schedule');
+                    checkbox.checked = !checkbox.checked; // revert
+                }
+                checkbox.disabled = false;
+            });
+
+            label.appendChild(checkbox);
+            label.appendChild(document.createTextNode(` ${test.name}`));
+
+            div.appendChild(label);
+
+            if (test.href) {
+                const link = document.createElement('a');
+                link.href = test.href;
+                link.textContent = test.href;
+                link.target = '_blank';
+                link.className = 'test-link';
+                div.appendChild(link);
+            }
+
+            const nextRunDiv = document.createElement('div');
+            nextRunDiv.className = 'next-run';
+            nextRunDiv.textContent = `Next run: ${formatDateTime(nextRun)}`;
+            div.appendChild(nextRunDiv);
+
+            return div;
+        }
+
+        async function refresh() {
+            const scheduleList = document.getElementById('scheduleList');
+            scheduleList.textContent = 'Loading...';
+
+            const [tests, nextRuns] = await Promise.all([fetchTests(), fetchNextRuns()]);
+
+            if (tests.length === 0) {
+                scheduleList.textContent = 'No tests available.';
+                return;
+            }
+
+            scheduleList.innerHTML = '';
+            tests.forEach(test => {
+                const nextRun = nextRuns[test.name] || null;
+                scheduleList.appendChild(createTestRow(test, nextRun));
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', refresh);
+    </script>
+</body>
+
+</html>
