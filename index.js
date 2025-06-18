@@ -50,7 +50,12 @@ app.get('/tests', (req, res) => {
     const name = file.replace('.json', '');
     const scheduled = scheduler.scheduledJobs.has(name);
 
-    return { name, href, mtime: stats.mtime, scheduled };
+    return {
+      name,
+      href,
+      mtime: stats.mtime,
+      scheduled
+    };
   });
 
   tests.sort((a, b) => b.mtime - a.mtime);
@@ -99,7 +104,7 @@ app.post('/record', async (req, res) => {
 
   try {
     const browser = await puppeteer.launch({
-      headless: process.env.NODE_ENV === 'production',
+      headless: process.env.NODE_ENV === 'production' ? 'new' : false,
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',
@@ -114,10 +119,12 @@ app.post('/record', async (req, res) => {
     const page = await browser.newPage();
 
     if (device && device !== 'desktop') {
+      const availableDevices = Object.keys(devices);
       if (devices[device]) {
         await page.emulate(devices[device]);
       } else {
         console.warn(`⚠️ Device descriptor for "${device}" not found`);
+        console.log(`🔍 Available devices: ${availableDevices.join(', ')}`);
       }
     }
 
@@ -230,6 +237,7 @@ app.delete('/delete/:testName', (req, res) => {
   res.status(200).send('Deleted');
 });
 
+// Scheduler endpoints
 app.post('/schedule/:testName', (req, res) => {
   const testName = req.params.testName;
   const sessionFile = path.join(sessionDir, `${testName}.json`);

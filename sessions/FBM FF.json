@@ -1,0 +1,1519 @@
+[
+  {
+    "type": "navigate",
+    "href": "https://fastingff.best.me/us-en-g-22m-usd/",
+    "timestamp": 1750277088676
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Male",
+      "id": "",
+      "name": "",
+      "className": "option svelte-53tyws selected",
+      "href": "",
+      "type": "button",
+      "selector": "div#gender > div > div > button:nth-child(2)"
+    },
+    "timestamp": 1750277091540
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "  18-26 ",
+      "id": "",
+      "name": "",
+      "className": "option svelte-53tyws selected",
+      "href": "",
+      "type": "button",
+      "selector": "div > div > button"
+    },
+    "timestamp": 1750277092872
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Improve overall health",
+      "id": "",
+      "name": "",
+      "className": "label svelte-1lju9rv",
+      "href": "",
+      "type": "",
+      "selector": "div#yourGoal > div > button:nth-child(2) > div > span:nth-child(2)"
+    },
+    "timestamp": 1750277093796
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277094632
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Hourglass",
+      "id": "",
+      "name": "",
+      "className": "label svelte-1lju9rv",
+      "href": "",
+      "type": "",
+      "selector": "div > button:nth-child(2) > div > span"
+    },
+    "timestamp": 1750277095683
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Never heard of it",
+      "id": "",
+      "name": "",
+      "className": "label svelte-1lju9rv",
+      "href": "",
+      "type": "",
+      "selector": "div > button:nth-child(3) > div > span"
+    },
+    "timestamp": 1750277096742
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "OK, got it",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277098007
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Afternoon",
+      "id": "",
+      "name": "",
+      "className": "label svelte-1lju9rv",
+      "href": "",
+      "type": "",
+      "selector": "div#hungerTime > div > button:nth-child(2) > div > span"
+    },
+    "timestamp": 1750277098959
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277099729
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "I usually skip breakfast",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "div > button > div > span > span"
+    },
+    "timestamp": 1750277100898
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "2 PM - 4 PM",
+      "id": "",
+      "name": "",
+      "className": "label svelte-1lju9rv",
+      "href": "",
+      "type": "",
+      "selector": "div > button:nth-child(4) > div > span"
+    },
+    "timestamp": 1750277101899
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": " 4 PM - 6 PM or earlier   ",
+      "id": "",
+      "name": "",
+      "className": "option svelte-53tyws selected",
+      "href": "",
+      "type": "button",
+      "selector": "div > button:nth-child(2)"
+    },
+    "timestamp": 1750277102844
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "I mostly eat at restaurants or order in",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "div > button:nth-child(3) > div > span > span"
+    },
+    "timestamp": 1750277103699
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Might differ from weekend to weekend",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "div > button:nth-child(3) > div > span > span"
+    },
+    "timestamp": 1750277104551
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Lightly active (1–2 workouts)",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "div > button:nth-child(2) > div > span:nth-child(2) > span"
+    },
+    "timestamp": 1750277105581
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "9 to 5 job",
+      "id": "",
+      "name": "",
+      "className": "label svelte-1lju9rv",
+      "href": "",
+      "type": "",
+      "selector": "div > button > div > span"
+    },
+    "timestamp": 1750277106610
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Mostly sedentary (minimal walking, standing)",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "div#describeJob > div > button > div > span > span"
+    },
+    "timestamp": 1750277107599
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "I want to try and lose some weight",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "div > button:nth-child(2) > div > span > span"
+    },
+    "timestamp": 1750277108801
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277110109
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "",
+      "name": "",
+      "className": "svelte-1rnsrkx",
+      "href": "",
+      "type": "text",
+      "selector": "div#age > input"
+    },
+    "timestamp": 1750277111093
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "2",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#age > input"
+    },
+    "timestamp": 1750277111886
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "27",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#age > input"
+    },
+    "timestamp": 1750277111943
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "svelte-ukzjgr loading",
+      "href": "",
+      "type": "submit",
+      "selector": "button"
+    },
+    "timestamp": 1750277113146
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "",
+      "name": "",
+      "className": "svelte-1rnsrkx",
+      "href": "",
+      "type": "text",
+      "selector": "div#height-ft > input"
+    },
+    "timestamp": 1750277114122
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "6",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#height-ft > input"
+    },
+    "timestamp": 1750277114588
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "",
+      "name": "",
+      "className": "svelte-1rnsrkx",
+      "href": "",
+      "type": "text",
+      "selector": "div#height-in > input"
+    },
+    "timestamp": 1750277115435
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "1",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#height-in > input"
+    },
+    "timestamp": 1750277115739
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277116542
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "",
+      "name": "",
+      "className": "svelte-1rnsrkx",
+      "href": "",
+      "type": "text",
+      "selector": "div#current-lbs > input"
+    },
+    "timestamp": 1750277117368
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "1",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#current-lbs > input"
+    },
+    "timestamp": 1750277117783
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "18",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#current-lbs > input"
+    },
+    "timestamp": 1750277117998
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "180",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#current-lbs > input"
+    },
+    "timestamp": 1750277118198
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277119554
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "",
+      "name": "",
+      "className": "svelte-1rnsrkx",
+      "href": "",
+      "type": "text",
+      "selector": "div#target_weight_lb > input"
+    },
+    "timestamp": 1750277120455
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "1",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#target_weight_lb > input"
+    },
+    "timestamp": 1750277120875
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "17",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#target_weight_lb > input"
+    },
+    "timestamp": 1750277121081
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "170",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#target_weight_lb > input"
+    },
+    "timestamp": 1750277121398
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277122334
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "",
+      "name": "",
+      "className": "svelte-1rnsrkx",
+      "href": "",
+      "type": "text",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277123136
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "K",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277123620
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kr",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277123729
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kri",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277123823
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kris",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277123923
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Krist",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277124109
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristi",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277124248
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristia",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277124376
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristian",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277124839
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristians",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277124943
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristians ",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277125067
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristians N",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277125500
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristians Nu",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277125747
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristians Nut",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277125949
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristians Nutr",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277126111
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristians Nutra",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277126299
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristians NutraT",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277126558
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristians NutraTe",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277126741
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristians NutraTes",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277126904
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "",
+      "value": "Kristians NutraTest",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#firstName > input"
+    },
+    "timestamp": 1750277126995
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277128045
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277130595
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277131871
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "1-2 hours",
+      "id": "",
+      "name": "",
+      "className": "label svelte-1lju9rv",
+      "href": "",
+      "type": "",
+      "selector": "div > button:nth-child(3) > div > span"
+    },
+    "timestamp": 1750277133118
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": " 5–6 hours   ",
+      "id": "",
+      "name": "",
+      "className": "option svelte-53tyws selected",
+      "href": "",
+      "type": "button",
+      "selector": "div > button:nth-child(3)"
+    },
+    "timestamp": 1750277134309
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "No, I don't",
+      "id": "",
+      "name": "",
+      "className": "label svelte-1lju9rv",
+      "href": "",
+      "type": "",
+      "selector": "div#diets > div > button > div > span"
+    },
+    "timestamp": 1750277135384
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277136288
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "2–3 glasses",
+      "id": "",
+      "name": "",
+      "className": "label svelte-1lju9rv",
+      "href": "",
+      "type": "",
+      "selector": "div > button:nth-child(2) > div > span:nth-child(2)"
+    },
+    "timestamp": 1750277137304
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "No",
+      "id": "",
+      "name": "",
+      "className": "label svelte-1lju9rv",
+      "href": "",
+      "type": "",
+      "selector": "div > button:nth-child(2) > div > span"
+    },
+    "timestamp": 1750277138367
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Acid reflux",
+      "id": "",
+      "name": "",
+      "className": "label svelte-1lju9rv",
+      "href": "",
+      "type": "",
+      "selector": "div#deseases > div > button:nth-child(2) > div > span"
+    },
+    "timestamp": 1750277139277
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277140097
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277142027
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "",
+      "name": "email",
+      "className": "svelte-1rnsrkx",
+      "href": "",
+      "type": "email",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277149339
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "k",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277149910
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kr",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277149999
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kri",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277150128
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kris",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277150188
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "krist",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277150387
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristi",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277150501
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristia",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277150629
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristian",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277150751
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277150867
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277151968
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+n",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277152377
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nu",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277152600
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nut",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277152893
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutr",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277153108
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutra",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277153245
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutrat",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277153344
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutrate",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277153471
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutrates",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277153615
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277153743
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest@",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277154111
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest@n",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277154282
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest@nu",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277154462
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest@nut",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277154575
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest@nutr",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277154751
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest@nutra",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277154948
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest@nutram",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277155056
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest@nutrame",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277155156
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest@nutrameg",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277155326
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest@nutrameg.",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277155428
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest@nutrameg.c",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277155521
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest@nutrameg.co",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277155641
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nutratest@nutrameg.com",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "",
+      "className": "svelte-1rnsrkx",
+      "selector": "div#email > input"
+    },
+    "timestamp": 1750277155831
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277156946
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Get my weight loss plan",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "button > span"
+    },
+    "timestamp": 1750277160817
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "1 month plan\n$44.00\n$22.00\n$\n0\n73\nper day",
+      "id": "",
+      "name": "",
+      "className": "plan svelte-t7cnlj tiny-fields selected",
+      "href": "",
+      "type": "button",
+      "selector": "div#el_JYVlc > div > div:nth-child(3) > div > div > button"
+    },
+    "timestamp": 1750277163354
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Get my plan",
+      "id": "",
+      "name": "",
+      "className": " svelte-kfp6vj",
+      "href": "",
+      "type": "",
+      "selector": "div#el_OGpNy > button > span"
+    },
+    "timestamp": 1750277164474
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Pay",
+      "id": "primer-submit-button",
+      "name": "",
+      "className": "pipe-btn",
+      "href": "",
+      "type": "submit",
+      "selector": "button#primer-submit-button"
+    },
+    "timestamp": 1750277194720
+  }
+]
