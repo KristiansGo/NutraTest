@@ -9,7 +9,7 @@ const { getNextRunTime } = require('./scheduler');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const isProduction = process.env.NODE_ENV === 'production';
+const isProd = process.env.NODE_ENV === 'production';
 
 const sessionDir = path.join(__dirname, 'sessions');
 if (!fs.existsSync(sessionDir)) {
@@ -37,6 +37,7 @@ app.get('/tests', (req, res) => {
   const tests = files.map(file => {
     const fullPath = path.join(sessionDir, file);
     const stats = fs.statSync(fullPath);
+
     let href = '';
     try {
       const content = fs.readFileSync(fullPath, 'utf-8');
@@ -50,7 +51,12 @@ app.get('/tests', (req, res) => {
     const name = file.replace('.json', '');
     const scheduled = scheduler.scheduledJobs.has(name);
 
-    return { name, href, mtime: stats.mtime, scheduled };
+    return {
+      name,
+      href,
+      mtime: stats.mtime,
+      scheduled
+    };
   });
 
   tests.sort((a, b) => b.mtime - a.mtime);
@@ -70,8 +76,10 @@ app.get('/run/:testName', (req, res) => {
   res.json({ status: 'started' });
 
   const child = spawn('node', ['replay.js', testName], { stdio: ['ignore', 'pipe', 'pipe'] });
+
   child.stdout.on('data', data => console.log(`[replay.js stdout]: ${data}`));
   child.stderr.on('data', data => console.error(`[replay.js stderr]: ${data}`));
+
   child.on('close', code => {
     const status = code === 0 ? 'done' : 'failed';
     fs.writeFileSync(statusFile, JSON.stringify({ status, timestamp: new Date().toISOString() }));
@@ -85,14 +93,19 @@ app.post('/record', async (req, res) => {
 
   const sessionFile = path.join(sessionDir, `${testName}.json`);
   const recordingStatusFile = path.join(sessionDir, `${testName}.recording.status.json`);
-  const recordedEvents = [{ type: 'navigate', href: url, timestamp: Date.now() }];
+
+  const recordedEvents = [{
+    type: 'navigate',
+    href: url,
+    timestamp: Date.now()
+  }];
 
   await fs.promises.writeFile(recordingStatusFile, JSON.stringify({ status: 'running', timestamp: new Date().toISOString() }));
   res.status(200).send('Recording started');
 
   try {
     const browser = await puppeteer.launch({
-      headless: isProduction ? 'new' : false,
+      headless: isProd ? 'new' : false,
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',
@@ -101,21 +114,21 @@ app.post('/record', async (req, res) => {
         '--mute-audio',
         '--start-maximized'
       ],
-      defaultViewport: null,
+      defaultViewport: null
     });
 
     const page = await browser.newPage();
+
     if (device && device !== 'desktop') {
-      const availableDevices = Object.keys(devices);
       if (devices[device]) {
         await page.emulate(devices[device]);
       } else {
         console.warn(`⚠️ Device descriptor for "${device}" not found`);
-        console.log(`🔍 Available devices: ${availableDevices.join(', ')}`);
       }
     }
 
     await page.exposeFunction('pushRecordedEvent', (event) => recordedEvents.push(event));
+
     await page.evaluateOnNewDocument(() => {
       const getSelector = (el) => {
         if (!el) return '';
@@ -180,8 +193,8 @@ app.post('/record', async (req, res) => {
     const saveSession = async (reason) => {
       try {
         await fs.promises.writeFile(sessionFile, JSON.stringify(recordedEvents, null, 2));
-        console.log(`✅ Session saved: sessions/${testName}.json (${reason})`);
         await fs.promises.writeFile(recordingStatusFile, JSON.stringify({ status: 'stopped', timestamp: new Date().toISOString() }));
+        console.log(`✅ Session saved: sessions/${testName}.json (${reason})`);
       } catch (err) {
         console.error("❌ Error saving session or updating status:", err.message);
       }
@@ -189,9 +202,8 @@ app.post('/record', async (req, res) => {
 
     page.on('close', () => saveSession('page closed'));
     browser.on('disconnected', () => saveSession('browser disconnected'));
-    process.on('SIGINT', () => {
-      saveSession('manual stop').then(() => process.exit());
-    });
+    process.on('SIGINT', () => saveSession('manual stop').then(() => process.exit()));
+
   } catch (err) {
     console.error("❌ Failed to launch Puppeteer:", err.message);
     await fs.promises.writeFile(recordingStatusFile, JSON.stringify({ status: 'stopped', timestamp: new Date().toISOString() }));
@@ -200,24 +212,17 @@ app.post('/record', async (req, res) => {
 
 app.delete('/delete/:testName', (req, res) => {
   const testName = req.params.testName;
-  const filesToDelete = [
+  const files = [
     `${testName}.json`,
     `${testName}.status.json`,
     `${testName}.recording.status.json`
   ];
-
-  filesToDelete.forEach(file => {
+  files.forEach(file => {
     const filePath = path.join(sessionDir, file);
     if (fs.existsSync(filePath)) {
-      try {
-        fs.unlinkSync(filePath);
-        console.log(`🗑️ Deleted: ${file}`);
-      } catch (err) {
-        console.error(`❌ Failed to delete ${file}:`, err.message);
-      }
+      fs.unlinkSync(filePath);
     }
   });
-
   scheduler.cancelScheduledRun(testName);
   res.status(200).send('Deleted');
 });
@@ -225,9 +230,7 @@ app.delete('/delete/:testName', (req, res) => {
 app.post('/schedule/:testName', (req, res) => {
   const testName = req.params.testName;
   const sessionFile = path.join(sessionDir, `${testName}.json`);
-  if (!fs.existsSync(sessionFile)) {
-    return res.status(404).json({ error: 'Test not found' });
-  }
+  if (!fs.existsSync(sessionFile)) return res.status(404).json({ error: 'Test not found' });
   scheduler.scheduleTestRun(testName);
   res.json({ status: 'scheduled' });
 });
