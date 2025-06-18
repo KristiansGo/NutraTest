@@ -1,6 +1,6 @@
 const express = require('express');
 const puppeteer = require('puppeteer');
-const devices = puppeteer.devices; // Use puppeteer.devices directly
+const devices = puppeteer.devices;
 const fs = require('fs');
 const path = require('path');
 const { spawn } = require('child_process');
@@ -9,6 +9,7 @@ const { getNextRunTime } = require('./scheduler');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const isProduction = process.env.NODE_ENV === 'production';
 
 const sessionDir = path.join(__dirname, 'sessions');
 if (!fs.existsSync(sessionDir)) {
@@ -28,9 +29,7 @@ app.get('/schedule', (req, res) => {
 });
 
 app.get('/tests', (req, res) => {
-  if (!fs.existsSync(sessionDir)) {
-    return res.json([]);
-  }
+  if (!fs.existsSync(sessionDir)) return res.json([]);
 
   const files = fs.readdirSync(sessionDir)
     .filter(f => f.endsWith('.json') && !f.endsWith('.status.json') && !f.endsWith('.recording.status.json'));
@@ -38,7 +37,6 @@ app.get('/tests', (req, res) => {
   const tests = files.map(file => {
     const fullPath = path.join(sessionDir, file);
     const stats = fs.statSync(fullPath);
-
     let href = '';
     try {
       const content = fs.readFileSync(fullPath, 'utf-8');
@@ -52,16 +50,10 @@ app.get('/tests', (req, res) => {
     const name = file.replace('.json', '');
     const scheduled = scheduler.scheduledJobs.has(name);
 
-    return {
-      name,
-      href,
-      mtime: stats.mtime,
-      scheduled
-    };
+    return { name, href, mtime: stats.mtime, scheduled };
   });
 
   tests.sort((a, b) => b.mtime - a.mtime);
-
   res.json(tests);
 });
 
@@ -74,107 +66,17 @@ app.get('/run/:testName', (req, res) => {
     return res.status(404).json({ error: 'Test not found' });
   }
 
-  try {
-    fs.writeFileSync(statusFile, JSON.stringify({ status: 'running', timestamp: new Date().toISOString() }));
-  } catch (err) {
-    console.error('❌ Failed to write run status:', err.message);
-  }
-
+  fs.writeFileSync(statusFile, JSON.stringify({ status: 'running', timestamp: new Date().toISOString() }));
   res.json({ status: 'started' });
 
   const child = spawn('node', ['replay.js', testName], { stdio: ['ignore', 'pipe', 'pipe'] });
-
-  child.stdout.on('data', (data) => {
-    console.log(`[replay.js stdout]: ${data.toString().trim()}`);
-  });
-
-  child.stderr.on('data', (data) => {
-    console.error(`[replay.js stderr]: ${data.toString().trim()}`);
-  });
-
-  child.on('close', (code) => {
+  child.stdout.on('data', data => console.log(`[replay.js stdout]: ${data}`));
+  child.stderr.on('data', data => console.error(`[replay.js stderr]: ${data}`));
+  child.on('close', code => {
     const status = code === 0 ? 'done' : 'failed';
-    try {
-      fs.writeFileSync(statusFile, JSON.stringify({ status, timestamp: new Date().toISOString() }));
-    } catch (err) {
-      console.error('❌ Failed to write final run status:', err.message);
-    }
+    fs.writeFileSync(statusFile, JSON.stringify({ status, timestamp: new Date().toISOString() }));
     console.log(`${status === 'done' ? '✅' : '❌'} Finished test '${testName}' with exit code ${code}`);
   });
-});
-
-app.get('/status/:testName', (req, res) => {
-  const statusFile = path.join(sessionDir, `${req.params.testName}.status.json`);
-  if (!fs.existsSync(statusFile)) {
-    return res.json({ status: 'unknown', timestamp: null });
-  }
-  try {
-    res.json(JSON.parse(fs.readFileSync(statusFile, 'utf-8')));
-  } catch (err) {
-    console.error('❌ Failed to read run status file:', err.message);
-    res.json({ status: 'unknown', timestamp: null });
-  }
-});
-
-app.get('/recording-status/:testName', (req, res) => {
-  const recordingStatusFile = path.join(sessionDir, `${req.params.testName}.recording.status.json`);
-  if (!fs.existsSync(recordingStatusFile)) {
-    return res.json({ status: 'stopped', timestamp: null });
-  }
-  try {
-    res.json(JSON.parse(fs.readFileSync(recordingStatusFile, 'utf-8')));
-  } catch (err) {
-    console.error('❌ Failed to read recording status file:', err.message);
-    res.json({ status: 'stopped', timestamp: null });
-  }
-});
-
-app.delete('/delete/:testName', (req, res) => {
-  const testName = req.params.testName;
-  const sessionFile = path.join(sessionDir, `${testName}.json`);
-  const statusFile = path.join(sessionDir, `${testName}.status.json`);
-  const recordingStatusFile = path.join(sessionDir, `${testName}.recording.status.json`);
-
-  let errorOccurred = false;
-
-  if (fs.existsSync(sessionFile)) {
-    try {
-      fs.unlinkSync(sessionFile);
-      console.log(`🗑️ Deleted test file: ${testName}.json`);
-    } catch (err) {
-      console.error(`❌ Failed to delete test file: ${err.message}`);
-      errorOccurred = true;
-    }
-  }
-
-  if (fs.existsSync(statusFile)) {
-    try {
-      fs.unlinkSync(statusFile);
-      console.log(`🗑️ Deleted status file: ${testName}.status.json`);
-    } catch (err) {
-      console.error(`❌ Failed to delete status file: ${err.message}`);
-      errorOccurred = true;
-    }
-  }
-
-  if (fs.existsSync(recordingStatusFile)) {
-    try {
-      fs.unlinkSync(recordingStatusFile);
-      console.log(`🗑️ Deleted recording status file: ${testName}.recording.status.json`);
-    } catch (err) {
-      console.error(`❌ Failed to delete recording status file: ${err.message}`);
-      errorOccurred = true;
-    }
-  }
-
-  if (errorOccurred) {
-    return res.status(500).send('Failed to delete some test files');
-  }
-
-  // Cancel scheduled run if any
-  scheduler.cancelScheduledRun(testName);
-
-  res.status(200).send('Deleted');
 });
 
 app.post('/record', async (req, res) => {
@@ -183,24 +85,14 @@ app.post('/record', async (req, res) => {
 
   const sessionFile = path.join(sessionDir, `${testName}.json`);
   const recordingStatusFile = path.join(sessionDir, `${testName}.recording.status.json`);
+  const recordedEvents = [{ type: 'navigate', href: url, timestamp: Date.now() }];
 
-  const recordedEvents = [{
-    type: 'navigate',
-    href: url,
-    timestamp: Date.now()
-  }];
-
-  try {
-    await fs.promises.writeFile(recordingStatusFile, JSON.stringify({ status: 'running', timestamp: new Date().toISOString() }));
-  } catch (err) {
-    console.error('❌ Failed to write recording status:', err.message);
-  }
-
+  await fs.promises.writeFile(recordingStatusFile, JSON.stringify({ status: 'running', timestamp: new Date().toISOString() }));
   res.status(200).send('Recording started');
 
   try {
     const browser = await puppeteer.launch({
-      headless: false,
+      headless: isProduction ? 'new' : false,
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',
@@ -213,19 +105,17 @@ app.post('/record', async (req, res) => {
     });
 
     const page = await browser.newPage();
-
     if (device && device !== 'desktop') {
+      const availableDevices = Object.keys(devices);
       if (devices[device]) {
         await page.emulate(devices[device]);
       } else {
         console.warn(`⚠️ Device descriptor for "${device}" not found`);
+        console.log(`🔍 Available devices: ${availableDevices.join(', ')}`);
       }
     }
 
-    await page.exposeFunction('pushRecordedEvent', (event) => {
-      recordedEvents.push(event);
-    });
-
+    await page.exposeFunction('pushRecordedEvent', (event) => recordedEvents.push(event));
     await page.evaluateOnNewDocument(() => {
       const getSelector = (el) => {
         if (!el) return '';
@@ -287,51 +177,50 @@ app.post('/record', async (req, res) => {
     await page.goto(url, { waitUntil: 'domcontentloaded' });
     console.log(`🟢 Recording browser launched for: ${url}`);
 
-    let sessionSaved = false;
-
     const saveSession = async (reason) => {
-      if (sessionSaved) return;
-      sessionSaved = true;
       try {
         await fs.promises.writeFile(sessionFile, JSON.stringify(recordedEvents, null, 2));
         console.log(`✅ Session saved: sessions/${testName}.json (${reason})`);
-
         await fs.promises.writeFile(recordingStatusFile, JSON.stringify({ status: 'stopped', timestamp: new Date().toISOString() }));
       } catch (err) {
-        console.error("❌ Error saving session or updating recording status:", err.message);
+        console.error("❌ Error saving session or updating status:", err.message);
       }
     };
 
-    page.on('close', async () => {
-      await saveSession('page closed');
-      try {
-        if (!browser.isConnected()) return;
-        await browser.close();
-      } catch {
-        // ignore errors closing browser here
-      }
+    page.on('close', () => saveSession('page closed'));
+    browser.on('disconnected', () => saveSession('browser disconnected'));
+    process.on('SIGINT', () => {
+      saveSession('manual stop').then(() => process.exit());
     });
-
-    browser.on('disconnected', async () => {
-      await saveSession('browser disconnected');
-    });
-
-    process.on('SIGINT', async () => {
-      await saveSession('manual stop');
-      process.exit();
-    });
-
   } catch (err) {
     console.error("❌ Failed to launch Puppeteer:", err.message);
-    try {
-      await fs.promises.writeFile(recordingStatusFile, JSON.stringify({ status: 'stopped', timestamp: new Date().toISOString() }));
-    } catch (e) {
-      console.error('❌ Failed to update recording status on error:', e.message);
-    }
+    await fs.promises.writeFile(recordingStatusFile, JSON.stringify({ status: 'stopped', timestamp: new Date().toISOString() }));
   }
 });
 
-// Scheduling API endpoints
+app.delete('/delete/:testName', (req, res) => {
+  const testName = req.params.testName;
+  const filesToDelete = [
+    `${testName}.json`,
+    `${testName}.status.json`,
+    `${testName}.recording.status.json`
+  ];
+
+  filesToDelete.forEach(file => {
+    const filePath = path.join(sessionDir, file);
+    if (fs.existsSync(filePath)) {
+      try {
+        fs.unlinkSync(filePath);
+        console.log(`🗑️ Deleted: ${file}`);
+      } catch (err) {
+        console.error(`❌ Failed to delete ${file}:`, err.message);
+      }
+    }
+  });
+
+  scheduler.cancelScheduledRun(testName);
+  res.status(200).send('Deleted');
+});
 
 app.post('/schedule/:testName', (req, res) => {
   const testName = req.params.testName;
@@ -344,21 +233,31 @@ app.post('/schedule/:testName', (req, res) => {
 });
 
 app.delete('/schedule/:testName', (req, res) => {
-  const testName = req.params.testName;
-  scheduler.cancelScheduledRun(testName);
+  scheduler.cancelScheduledRun(req.params.testName);
   res.json({ status: 'unscheduled' });
 });
 
 app.get('/schedule/next-run', (req, res) => {
   const nextRuns = {};
   for (const testName of scheduler.scheduledJobs.keys()) {
-    const nextRunDate = getNextRunTime(testName);
-    nextRuns[testName] = nextRunDate ? nextRunDate.toISOString() : null;
+    const next = getNextRunTime(testName);
+    nextRuns[testName] = next ? next.toISOString() : null;
   }
   res.json(nextRuns);
+});
+
+app.get('/status/:testName', (req, res) => {
+  const file = path.join(sessionDir, `${req.params.testName}.status.json`);
+  if (!fs.existsSync(file)) return res.json({ status: 'unknown' });
+  res.json(JSON.parse(fs.readFileSync(file, 'utf-8')));
+});
+
+app.get('/recording-status/:testName', (req, res) => {
+  const file = path.join(sessionDir, `${req.params.testName}.recording.status.json`);
+  if (!fs.existsSync(file)) return res.json({ status: 'stopped' });
+  res.json(JSON.parse(fs.readFileSync(file, 'utf-8')));
 });
 
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`🟢 Server running at http://0.0.0.0:${PORT}`);
 });
-
