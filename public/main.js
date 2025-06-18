@@ -1,4 +1,91 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const recordForm = document.getElementById('recordForm');
+
+    // Create device label and selector dynamically
+    const deviceLabel = document.createElement('label');
+    deviceLabel.textContent = 'Select device:';
+    deviceLabel.style.display = 'block';
+    deviceLabel.style.marginTop = '1rem';
+
+    const deviceSelect = document.createElement('select');
+    deviceSelect.name = 'device';
+    deviceSelect.id = 'deviceSelect';
+    deviceSelect.style.marginTop = '0.25rem';
+    deviceSelect.style.marginBottom = '1rem';
+
+    const devices = [
+        { name: 'Desktop (Default)', value: 'desktop' },
+        { name: 'iPhone 11', value: 'iPhone 11' },
+        { name: 'Samsung Galaxy S9', value: 'Samsung Galaxy S9' },
+        { name: 'iPad', value: 'iPad' },
+        // Add more devices here if needed
+    ];
+
+    devices.forEach(d => {
+        const option = document.createElement('option');
+        option.value = d.value;
+        option.textContent = d.name;
+        deviceSelect.appendChild(option);
+    });
+
+    recordForm.insertBefore(deviceLabel, recordForm.querySelector('button'));
+    recordForm.insertBefore(deviceSelect, recordForm.querySelector('button'));
+
+    const recordMessage = document.getElementById('recordMessage');
+    const submitBtn = document.getElementById('submitBtn');
+
+    recordForm.addEventListener('submit', async function (event) {
+        event.preventDefault();
+
+        const urlInput = this.url;
+        const testNameInput = this.testName;
+        const device = deviceSelect.value;
+
+        const url = urlInput.value.trim();
+        const testName = testNameInput.value.trim();
+
+        if (!url || !testName) {
+            alert('Please fill in both URL and Test Name.');
+            return;
+        }
+
+        submitBtn.disabled = true;
+
+        urlInput.value = '';
+        testNameInput.value = '';
+
+        recordMessage.textContent = `Recording started for test "${testName}" on device "${device}"`;
+
+        const intervalId = setInterval(async () => {
+            try {
+                const res = await fetch(`/recording-status/${encodeURIComponent(testName)}`);
+                const data = await res.json();
+
+                if (data.status !== 'running') {
+                    recordMessage.textContent = '';
+                    clearInterval(intervalId);
+                    location.reload();
+                }
+            } catch {
+                // ignore errors silently
+            }
+        }, 3000);
+
+        try {
+            await fetch('/record', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ url, testName, device }),
+            });
+        } catch (err) {
+            alert('Failed to start recording. Please try again.');
+            recordMessage.textContent = '';
+            clearInterval(intervalId);
+            submitBtn.disabled = false;
+        }
+    });
+
+    // Existing code for listing tests remains unchanged
     fetch('/tests')
         .then(res => res.json())
         .then(tests => {
@@ -29,7 +116,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 const statusSpan = li.querySelector('.status');
                 const testName = t.name;
 
-                // Show last run status and timestamp on page load
                 fetch(`/status/${encodeURIComponent(testName)}`)
                     .then(res => res.json())
                     .then(data => {

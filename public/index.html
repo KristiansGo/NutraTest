@@ -9,7 +9,6 @@
 <body>
     <h1>🧪 NutraTest</h1>
     <div>
-        <!-- Added link to scheduling page -->
         <a href="/schedule" style="display: inline-block; margin-bottom: 1rem; font-weight: bold;">
             🕒 Scheduled Runs
         </a>
@@ -22,6 +21,8 @@
 
         <label>Test name:</label>
         <input type="text" name="testName" placeholder="Name" required>
+
+        <!-- REMOVE device selector markup here -->
 
         <button type="submit" id="submitBtn">Start Recording</button>
     </form>
@@ -36,69 +37,6 @@
     </div>
 
     <script src="/main.js"></script>
-
-    <script>
-        const recordMessage = document.getElementById('recordMessage');
-        const submitBtn = document.getElementById('submitBtn');
-
-        document.getElementById('recordForm').addEventListener('submit', async function (event) {
-            event.preventDefault();
-
-            const urlInput = this.url;
-            const testNameInput = this.testName;
-
-            const url = urlInput.value.trim();
-            const testName = testNameInput.value.trim();
-
-            if (!url || !testName) {
-                alert('Please fill in both URL and Test Name.');
-                return;
-            }
-
-            // Disable submit button to prevent multiple clicks
-            submitBtn.disabled = true;
-
-            // Clear inputs immediately
-            urlInput.value = '';
-            testNameInput.value = '';
-
-            // Show recording started message
-            recordMessage.textContent = `Recording started for test "${testName}"`;
-
-            // Start polling recording status every 3 seconds
-            const intervalId = setInterval(async () => {
-                try {
-                    const res = await fetch(`/recording-status/${encodeURIComponent(testName)}`);
-                    const data = await res.json();
-
-                    if (data.status !== 'running') {
-                        // Recording stopped - clear message and stop polling
-                        recordMessage.textContent = '';
-                        clearInterval(intervalId);
-
-                        // Reload page to show new test in list
-                        location.reload();
-                    }
-                } catch {
-                    // On error, silently ignore and retry next interval
-                }
-            }, 3000);
-
-            try {
-                await fetch('/record', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ url, testName }),
-                });
-            } catch (err) {
-                alert('Failed to start recording. Please try again.');
-                recordMessage.textContent = '';
-                clearInterval(intervalId);
-                submitBtn.disabled = false;
-            }
-        });
-    </script>
-
 </body>
 
 </html>

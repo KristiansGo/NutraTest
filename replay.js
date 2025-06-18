@@ -78,7 +78,7 @@ async function typeInIframeInput(page, selector, value) {
                 return true;
             }
         } catch {
-            // Ignore errors and continue trying other frames
+            // Ignore and try next frame
         }
     }
     return false;
@@ -228,6 +228,7 @@ async function safeClick(page, selector) {
             }
 
             if (type === 'input') {
+                // Skip input events for checkboxes and radios, handled by clicks
                 if (detail.type === 'checkbox' || detail.type === 'radio') {
                     console.log(`ℹ️ Skipping input event for ${detail.type} (handled by click)`);
                     continue;

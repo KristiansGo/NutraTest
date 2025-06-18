@@ -1,5 +1,6 @@
 const express = require('express');
 const puppeteer = require('puppeteer');
+const devices = puppeteer.devices; // Use puppeteer.devices directly
 const fs = require('fs');
 const path = require('path');
 const { spawn } = require('child_process');
@@ -177,7 +178,7 @@ app.delete('/delete/:testName', (req, res) => {
 });
 
 app.post('/record', async (req, res) => {
-  const { url, testName } = req.body;
+  const { url, testName, device } = req.body;
   if (!url || !testName) return res.status(400).send('Missing URL or test name');
 
   const sessionFile = path.join(sessionDir, `${testName}.json`);
@@ -212,6 +213,14 @@ app.post('/record', async (req, res) => {
     });
 
     const page = await browser.newPage();
+
+    if (device && device !== 'desktop') {
+      if (devices[device]) {
+        await page.emulate(devices[device]);
+      } else {
+        console.warn(`⚠️ Device descriptor for "${device}" not found`);
+      }
+    }
 
     await page.exposeFunction('pushRecordedEvent', (event) => {
       recordedEvents.push(event);
@@ -349,6 +358,7 @@ app.get('/schedule/next-run', (req, res) => {
   res.json(nextRuns);
 });
 
-app.listen(PORT, () => {
-  console.log(`🟢 Server running at http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+  console.log(`🟢 Server running at http://0.0.0.0:${PORT}`);
 });
+

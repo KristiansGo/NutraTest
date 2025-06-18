@@ -13,7 +13,7 @@ if (!targetUrl || !testName) {
 const sessionDir = path.join(__dirname, 'sessions');
 if (!fs.existsSync(sessionDir)) fs.mkdirSync(sessionDir, { recursive: true });
 
-// Sanitize testName to a safe file name (replace slashes and invalid chars with '-')
+// Sanitize testName to safe file name (replace slashes and invalid chars with '-')
 function sanitizeFileName(name) {
   return name.replace(/[\/\\?%*:|"<>]/g, '-');
 }
