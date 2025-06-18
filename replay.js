@@ -65,9 +65,39 @@ process.on('unhandledRejection', async (reason) => {
     process.exit(1);
 });
 
+// Try to type inside iframes if input not found on main page
+async function typeInIframeInput(page, selector, value) {
+    const frames = page.frames();
+    for (const frame of frames) {
+        try {
+            const el = await frame.waitForSelector(selector, { timeout: 3000 });
+            if (el) {
+                await el.focus();
+                await el.click({ clickCount: 3 });
+                await el.type(value, { delay: 50 });
+                return true;
+            }
+        } catch {
+            // Ignore errors and continue trying other frames
+        }
+    }
+    return false;
+}
+
+async function safeClick(page, selector) {
+    try {
+        const el = await page.waitForSelector(selector, { visible: true, timeout: 5000 });
+        await el.evaluate(e => e.scrollIntoView({ behavior: 'smooth', block: 'center' }));
+        await el.click();
+        return true;
+    } catch {
+        return false;
+    }
+}
+
 (async () => {
     browser = await puppeteer.launch({
-        headless: 'new', // use new headless mode for stability
+        headless: 'new',
         args: [
             '--no-sandbox',
             '--disable-setuid-sandbox',
@@ -80,7 +110,7 @@ process.on('unhandledRejection', async (reason) => {
             '--disable-features=site-per-process,IsolateOrigins,site-per-process',
             '--disable-site-isolation-trials',
         ],
-        dumpio: true, // logs chromium stdout/stderr
+        dumpio: true,
     });
 
     const page = await browser.newPage();
@@ -98,8 +128,6 @@ process.on('unhandledRejection', async (reason) => {
 
                 const message = `❌ **Test Failed**: \`${testName}\`\n**Step**: ${stepIndex + 1}\n**Reason**: ${reason}`;
                 sendDiscordWebhookWithScreenshot(message, screenshotPath);
-            } else {
-                console.warn(`⚠️ Cannot take screenshot, page already closed`);
             }
         } catch (e) {
             console.warn(`⚠️ Error taking screenshot: ${e.message}`);
@@ -134,45 +162,97 @@ process.on('unhandledRejection', async (reason) => {
         lastTimestamp = timestamp;
         if (waitTime > 0) await new Promise(resolve => setTimeout(resolve, waitTime));
 
-
         console.log(`➡️ Step ${i + 1}: ${type} ${detail?.text || detail?.name || ''}`);
 
         try {
             if (type === 'click') {
-                const clicked = await page.evaluate((d) => {
-                    const byId = d.id && document.getElementById(d.id);
-                    if (byId) { byId.click(); return 'id'; }
+                let clicked = false;
 
-                    const bySelector = d.selector && document.querySelector(d.selector);
-                    if (bySelector) { bySelector.click(); return 'selector'; }
-
-                    const byText = Array.from(document.querySelectorAll('a, button, input, label'))
-                        .find(el => el.innerText.trim() === d.text.trim());
-                    if (byText) { byText.click(); return 'text'; }
-
-                    return null;
-                }, detail);
-
-                if (!clicked) {
-                    await failWithScreenshot(i, `Click target not found: ${detail.text || detail.id || detail.selector}`);
+                if (detail.id) {
+                    clicked = await safeClick(page, `#${detail.id}`);
                 }
 
-                console.log(`✅ Clicked using ${clicked}: ${detail.text || detail.id || detail.selector}`);
+                if (!clicked && detail.selector) {
+                    clicked = await safeClick(page, detail.selector);
+                }
+
+                if (!clicked && (detail.tag === 'LABEL' || detail.tag === 'SPAN')) {
+                    clicked = await page.evaluate(async (selector) => {
+                        const el = document.querySelector(selector);
+                        if (!el) return false;
+
+                        if (el.tagName === 'LABEL' && el.htmlFor) {
+                            const input = document.getElementById(el.htmlFor);
+                            if (input) {
+                                input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                                input.click();
+                                return true;
+                            }
+                        }
+
+                        let input = el.querySelector('input[type="checkbox"], input[type="radio"]');
+                        if (input) {
+                            input.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            input.click();
+                            return true;
+                        }
+
+                        if (el.previousElementSibling && (el.previousElementSibling.type === 'checkbox' || el.previousElementSibling.type === 'radio')) {
+                            el.previousElementSibling.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            el.previousElementSibling.click();
+                            return true;
+                        }
+
+                        return false;
+                    }, detail.selector || '');
+                }
+
+                if (!clicked) {
+                    clicked = await page.evaluate(async (text) => {
+                        const elements = Array.from(document.querySelectorAll('button, a, input, label, span'));
+                        const el = elements.find(e => e.innerText.trim() === text.trim());
+                        if (el) {
+                            el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                            el.click();
+                            return true;
+                        }
+                        return false;
+                    }, detail.text);
+                }
+
+                if (!clicked) {
+                    await failWithScreenshot(i, `Click target not found or not clickable: ${detail.text || detail.id || detail.selector}`);
+                } else {
+                    console.log(`✅ Clicked successfully: ${detail.text || detail.id || detail.selector}`);
+                }
             }
 
             if (type === 'input') {
+                if (detail.type === 'checkbox' || detail.type === 'radio') {
+                    console.log(`ℹ️ Skipping input event for ${detail.type} (handled by click)`);
+                    continue;
+                }
+
                 const selector = detail.selector || `[name="${detail.name}"]`;
                 try {
-                    const elHandle = await page.waitForSelector(selector, { timeout: 5000 });
-                    await elHandle.focus();
-                    await elHandle.click({ clickCount: 3 });
-                    await elHandle.type(detail.value || '', { delay: 50 });
-                    console.log(`⌨️ Typed into ${selector}: ${detail.value}`);
+                    // Try main page first
+                    let elHandle;
+                    try {
+                        elHandle = await page.waitForSelector(selector, { timeout: 3000 });
+                        await elHandle.focus();
+                        await elHandle.click({ clickCount: 3 });
+                        await elHandle.type(detail.value || '', { delay: 50 });
+                        console.log(`⌨️ Typed into ${selector}: ${detail.value}`);
+                    } catch {
+                        // Try typing inside iframes
+                        const typed = await typeInIframeInput(page, selector, detail.value || '');
+                        if (!typed) throw new Error(`Input field not found: ${selector}`);
+                        else console.log(`⌨️ Typed into iframe input: ${selector}: ${detail.value}`);
+                    }
                 } catch (err) {
                     await failWithScreenshot(i, `Input field not found: ${selector}`);
                 }
             }
-
         } catch (err) {
             await failWithScreenshot(i, err.message);
         }

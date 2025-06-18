@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                                         statusSpan.textContent =
                                             statusData.status === 'done'
-                                                ? `✅ Done (${time} ${date})`
+                                                ? `✅ Success (${time} ${date})`
                                                 : `❌ Failed (${time} ${date})`;
 
                                         runBtn.innerHTML = originalText;

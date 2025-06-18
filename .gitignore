@@ -1,4 +1,6 @@
 node_modules
 funnel-session.json
 .env
+sessions
+screenshots
 

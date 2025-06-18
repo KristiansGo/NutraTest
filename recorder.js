@@ -13,7 +13,13 @@ if (!targetUrl || !testName) {
 const sessionDir = path.join(__dirname, 'sessions');
 if (!fs.existsSync(sessionDir)) fs.mkdirSync(sessionDir, { recursive: true });
 
-const sessionFile = path.join(sessionDir, `${testName}.json`);
+// Sanitize testName to a safe file name (replace slashes and invalid chars with '-')
+function sanitizeFileName(name) {
+  return name.replace(/[\/\\?%*:|"<>]/g, '-');
+}
+const safeTestName = sanitizeFileName(testName);
+
+const sessionFile = path.join(sessionDir, `${safeTestName}.json`);
 
 (async () => {
   const recordedEvents = [{
@@ -24,13 +30,13 @@ const sessionFile = path.join(sessionDir, `${testName}.json`);
 
   const browser = await puppeteer.launch({
     headless: false,
-    executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', // remove or parametrize if needed
+    // Change or remove executablePath if needed for your environment
+    executablePath: '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
     args: ['--no-sandbox', '--disable-setuid-sandbox']
   });
 
   const page = await browser.newPage();
 
-  // Optional: handle page errors inside browser page
   page.on('pageerror', err => {
     console.error('❌ Page error:', err);
   });
@@ -38,36 +44,75 @@ const sessionFile = path.join(sessionDir, `${testName}.json`);
   await page.evaluateOnNewDocument((initialEvents) => {
     window.recordedEvents = initialEvents;
 
+    // Helper: build unique CSS selector for an element
+    function getSelector(el) {
+      if (!el) return '';
+      const path = [];
+      while (el && el.nodeType === 1) { // Element node
+        let selector = el.nodeName.toLowerCase();
+        if (el.id) {
+          selector += `#${el.id}`;
+          path.unshift(selector);
+          break; // id is unique, no need to go further
+        } else {
+          let siblingIndex = 1;
+          let sibling = el.previousElementSibling;
+          while (sibling) {
+            if (sibling.nodeName.toLowerCase() === selector) {
+              siblingIndex++;
+            }
+            sibling = sibling.previousElementSibling;
+          }
+          if (siblingIndex > 1) {
+            selector += `:nth-of-type(${siblingIndex})`;
+          }
+          path.unshift(selector);
+          el = el.parentElement;
+        }
+      }
+      return path.join(' > ');
+    }
+
     document.addEventListener('click', (e) => {
-      const t = e.target.closest('button, a, input, label');
+      const t = e.target.closest('button, a, input, label, span');
       if (!t) return;
 
-      recordedEvents.push({
+      window.recordedEvents.push({
         type: 'click',
         detail: {
           tag: t.tagName,
-          text: t.innerText,
+          text: t.innerText || '',
           id: t.id || '',
           name: t.name || '',
+          className: t.className || '',
           href: t.href || '',
-          type: t.type || ''
+          type: t.type || '',
+          selector: getSelector(t)
         },
         timestamp: Date.now()
       });
     });
 
     document.addEventListener('input', (e) => {
-      recordedEvents.push({
+      const t = e.target;
+      window.recordedEvents.push({
         type: 'input',
         detail: {
-          name: e.target.name,
-          value: e.target.value
+          name: t.name || '',
+          value: t.value || '',
+          checked: t.checked || false,
+          tag: t.tagName.toLowerCase() || '',
+          type: t.type || '',
+          id: t.id || '',
+          className: t.className || '',
+          selector: getSelector(t)
         },
         timestamp: Date.now()
       });
     });
 
-    window.getRecordedEvents = () => recordedEvents;
+    window.getRecordedEvents = () => window.recordedEvents;
+
   }, recordedEvents);
 
   await page.goto(targetUrl, { waitUntil: 'domcontentloaded' });
@@ -78,7 +123,7 @@ const sessionFile = path.join(sessionDir, `${testName}.json`);
     try {
       const events = await page.evaluate(() => window.getRecordedEvents());
       fs.writeFileSync(sessionFile, JSON.stringify(events, null, 2));
-      console.log(`✅ Session saved: sessions/${testName}.json (on page close)`);
+      console.log(`✅ Session saved: sessions/${safeTestName}.json (on page close)`);
     } catch (err) {
       console.error("❌ Error saving session:", err);
     }
@@ -89,7 +134,7 @@ const sessionFile = path.join(sessionDir, `${testName}.json`);
     try {
       const events = await page.evaluate(() => window.getRecordedEvents());
       fs.writeFileSync(sessionFile, JSON.stringify(events, null, 2));
-      console.log(`✅ Session saved: sessions/${testName}.json (on SIGINT)`);
+      console.log(`✅ Session saved: sessions/${safeTestName}.json (on SIGINT)`);
       process.exit();
     } catch (err) {
       console.error("❌ Error saving session on exit:", err);
