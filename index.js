@@ -104,17 +104,16 @@ app.post('/record', async (req, res) => {
 
   try {
     const browser = await puppeteer.launch({
-      headless: process.env.NODE_ENV === 'production' ? 'new' : false,
+      headless: 'new', // or just true if you’re using older Puppeteer
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',
         '--disable-dev-shm-usage',
         '--disable-gpu',
-        '--mute-audio',
-        '--start-maximized'
-      ],
-      defaultViewport: null,
+        '--mute-audio'
+      ]
     });
+
 
     const page = await browser.newPage();
 
