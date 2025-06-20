@@ -247,16 +247,18 @@ app.delete('/delete/:testName', (req, res) => {
   res.status(200).send('Deleted');
 });
 
-// Scheduler endpoints
 app.post('/schedule/:testName', (req, res) => {
   const testName = req.params.testName;
   const sessionFile = path.join(sessionDir, `${testName}.json`);
   if (!fs.existsSync(sessionFile)) {
     return res.status(404).json({ error: 'Test not found' });
   }
-  scheduler.scheduleTestRun(testName);
+
+  scheduler.scheduleTestRun(testName); // ✅ this handles queueing now
   res.json({ status: 'scheduled' });
 });
+
+
 
 app.delete('/schedule/:testName', (req, res) => {
   scheduler.cancelScheduledRun(req.params.testName);
