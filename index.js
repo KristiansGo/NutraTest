@@ -128,7 +128,10 @@ app.post('/record', async (req, res) => {
       }
     }
 
-    await page.exposeFunction('pushRecordedEvent', (event) => recordedEvents.push(event));
+    await page.exposeFunction('pushRecordedEvent', (event) => {
+      recordedEvents.push(event);
+      console.log(`📥 Recorded event: ${event.type} → ${event.detail?.text || event.detail?.value || '[no text]'}`);
+    });
 
     await page.evaluateOnNewDocument(() => {
       const getSelector = (el) => {
@@ -201,11 +204,18 @@ app.post('/record', async (req, res) => {
       }
     };
 
-    page.on('close', () => saveSession('page closed'));
-    browser.on('disconnected', () => saveSession('browser disconnected'));
-    process.on('SIGINT', () => {
-      saveSession('manual stop').then(() => process.exit());
+    page.on('close', async () => {
+      await saveSession('page closed');
+      await browser.close(); // make sure browser shuts down
     });
+
+    process.on('SIGINT', () => {
+      saveSession('manual stop').then(async () => {
+        await browser.close();
+        process.exit();
+      });
+    });
+
 
   } catch (err) {
     console.error("❌ Failed to launch Puppeteer:", err.message);

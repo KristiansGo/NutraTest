@@ -8,6 +8,7 @@
 
 <body>
     <h1>🧪 NutraTest</h1>
+
     <div>
         <a href="/schedule" style="display: inline-block; margin-bottom: 1rem; font-weight: bold;">
             🕒 Scheduled Runs
@@ -16,26 +17,26 @@
 
     <form id="recordForm" novalidate>
         <h2>Create New Test</h2>
-        <label>URL to test:</label>
-        <input type="text" name="url" placeholder="Url" required>
 
-        <label>Test name:</label>
-        <input type="text" name="testName" placeholder="Name" required>
+        <label for="url">🔗 URL to test:</label>
+        <input type="text" name="url" id="url" placeholder="https://example.com" required>
 
-        <!-- REMOVE device selector markup here -->
+        <label for="testName">📝 Test name:</label>
+        <input type="text" name="testName" id="testName" placeholder="e.g. checkout-test" required>
 
-        <button type="submit" id="submitBtn">Start Recording</button>
+        <button type="submit" id="submitBtn">▶ Start Recording</button>
     </form>
 
-    <div id="recordMessage" style="margin-top: 1rem; color: green;"></div>
+    <div id="recordMessage" style="margin-bottom: 2rem; font-weight: bold;"></div>
 
     <div class="test-list">
-        <h2>Available Tests</h2>
+        <h2>📋 Available Tests</h2>
         <div id="testList">
-            <!-- This will be replaced by main.js -->
+            <!-- Populated by main.js -->
         </div>
     </div>
 
+    <!-- Only load main.js — it handles everything -->
     <script src="/main.js"></script>
 </body>
 
