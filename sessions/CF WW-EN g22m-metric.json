@@ -1,0 +1,1169 @@
+[
+  {
+    "type": "navigate",
+    "href": "https://v3.certifiedfasting.com/ww-en/g-22m-usd-metric",
+    "timestamp": 1750853033134
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Male",
+      "id": "",
+      "name": "",
+      "className": "pipe-clickable-card pipe-male",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div > div:nth-child(2) > div > form > div > div:nth-child(4) > button:nth-child(2)"
+    },
+    "timestamp": 1750853035919
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "27-38",
+      "id": "",
+      "name": "",
+      "className": "pipe-clickable-card age-range-2",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div > div:nth-child(2) > div > form > div > div:nth-child(5) > button:nth-child(2)"
+    },
+    "timestamp": 1750853037424
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Get firm and toned",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-8",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > label:nth-child(3)"
+    },
+    "timestamp": 1750853038369
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "yourGoal-toned",
+      "name": "yourGoal",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#yourGoal-toned"
+    },
+    "timestamp": 1750853038372
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "yourGoal",
+      "value": "toned",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "yourGoal-toned",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#yourGoal-toned"
+    },
+    "timestamp": 1750853038372
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(4) > button > span > span"
+    },
+    "timestamp": 1750853038929
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Hourglass",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn pipe-option-btn-with-art mb-8 pipe-body-type pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button:nth-child(2)"
+    },
+    "timestamp": 1750853039729
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Never heard of it",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(3)"
+    },
+    "timestamp": 1750853040550
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "OK, got it",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(5) > a > button > span > span"
+    },
+    "timestamp": 1750853041611
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Afternoon",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-4",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > label:nth-child(2)"
+    },
+    "timestamp": 1750853042798
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "hungerTime-afternoon",
+      "name": "hungerTime",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#hungerTime-afternoon"
+    },
+    "timestamp": 1750853042799
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "hungerTime",
+      "value": "afternoon",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "hungerTime-afternoon",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#hungerTime-afternoon"
+    },
+    "timestamp": 1750853042800
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn ",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(5) > button"
+    },
+    "timestamp": 1750853043716
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "6:00 - 8:00 or earlier",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2) > span"
+    },
+    "timestamp": 1750853044681
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "12:00 - 14:00",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(3)"
+    },
+    "timestamp": 1750853045663
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "16:00 - 18:00 or earlier",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2) > span"
+    },
+    "timestamp": 1750853046670
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "I mostly eat at restaurants or order in",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(3) > span"
+    },
+    "timestamp": 1750853047577
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Yes, I can do it!",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2)"
+    },
+    "timestamp": 1750853048368
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Moderately active (3–5 workouts)",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(3) > span:nth-child(2)"
+    },
+    "timestamp": 1750853049331
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Night job",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2)"
+    },
+    "timestamp": 1750853050193
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Very physical (hard labour)",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(3) > span"
+    },
+    "timestamp": 1750853050981
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "I want to lose the maximum amount of weight",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(3) > span"
+    },
+    "timestamp": 1750853051785
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(4) > a > button > span > span"
+    },
+    "timestamp": 1750853053044
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "age",
+      "value": "2",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "age",
+      "className": "pipe-input",
+      "selector": "input#age"
+    },
+    "timestamp": 1750853054382
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "age",
+      "value": "27",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "age",
+      "className": "pipe-input",
+      "selector": "input#age"
+    },
+    "timestamp": 1750853054670
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn mt-10",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button"
+    },
+    "timestamp": 1750853055122
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "heightCm",
+      "value": "1",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "heightCm",
+      "className": "pipe-input",
+      "selector": "input#heightCm"
+    },
+    "timestamp": 1750853056186
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "heightCm",
+      "value": "18",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "heightCm",
+      "className": "pipe-input",
+      "selector": "input#heightCm"
+    },
+    "timestamp": 1750853056532
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "heightCm",
+      "value": "187",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "heightCm",
+      "className": "pipe-input",
+      "selector": "input#heightCm"
+    },
+    "timestamp": 1750853057405
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn mt-10",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button"
+    },
+    "timestamp": 1750853058014
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "weightKg",
+      "value": "8",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "weightKg",
+      "className": "pipe-input",
+      "selector": "input#weightKg"
+    },
+    "timestamp": 1750853058876
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "weightKg",
+      "value": "80",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "weightKg",
+      "className": "pipe-input",
+      "selector": "input#weightKg"
+    },
+    "timestamp": 1750853059105
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(5) > form > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750853059752
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(5) > form > div:nth-child(4) > button > span > span"
+    },
+    "timestamp": 1750853060780
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "firstName",
+      "value": "K",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "firstName",
+      "className": "pipe-input",
+      "selector": "input#firstName"
+    },
+    "timestamp": 1750853062353
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "firstName",
+      "value": "KG",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "firstName",
+      "className": "pipe-input",
+      "selector": "input#firstName"
+    },
+    "timestamp": 1750853062543
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(6) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750853064102
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(8) > button > span > span"
+    },
+    "timestamp": 1750853065478
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(7) > a > button > span > span"
+    },
+    "timestamp": 1750853067094
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(4) > a > button > span > span"
+    },
+    "timestamp": 1750853068456
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "7–8 hours",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2)"
+    },
+    "timestamp": 1750853069797
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Keto diet",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-4",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > label:nth-child(3)"
+    },
+    "timestamp": 1750853070873
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "diets-keto",
+      "name": "diets",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#diets-keto"
+    },
+    "timestamp": 1750853070875
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "diets",
+      "value": "keto",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "diets-keto",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#diets-keto"
+    },
+    "timestamp": 1750853070875
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn ",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(10) > button"
+    },
+    "timestamp": 1750853071727
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "2–3 glasses",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2)"
+    },
+    "timestamp": 1750853072704
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "No",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2)"
+    },
+    "timestamp": 1750853074006
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Sleep apnea",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-4",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > label:nth-child(3)"
+    },
+    "timestamp": 1750853074970
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "deseases-sleep_apnea",
+      "name": "deseases",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#deseases-sleep_apnea"
+    },
+    "timestamp": 1750853074973
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "deseases",
+      "value": "sleep_apnea",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "deseases-sleep_apnea",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#deseases-sleep_apnea"
+    },
+    "timestamp": 1750853074973
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn ",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(11) > button"
+    },
+    "timestamp": 1750853075749
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div:nth-child(8) > a > button > span > span"
+    },
+    "timestamp": 1750853076619
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "k",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853091030
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kr",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853091121
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kri",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853091248
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kris",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853091320
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "krist",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853091532
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristi",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853091668
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristia",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853091780
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristian",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853091892
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853091988
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853092381
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+n",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853092741
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+ny",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853092944
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+n",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853093742
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853093906
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853094365
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@n",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853094596
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nu",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853094794
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nut",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853094906
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutr",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853095085
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutra",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853095317
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutram",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853095438
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrame",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853095521
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853095704
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853095785
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.c",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853095890
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.co",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853095996
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.com",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853096177
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(3) > button > span > span"
+    },
+    "timestamp": 1750853097568
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Get my weight loss plan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > a > button > span > span"
+    },
+    "timestamp": 1750853099997
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Get my plan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "div#stickyTrigger > button > span > span"
+    },
+    "timestamp": 1750853102137
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pay",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "button#primer-submit-button > span > span"
+    },
+    "timestamp": 1750853104749
+  }
+]

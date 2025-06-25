@@ -1,4 +1,3 @@
-// recorder.js
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
@@ -28,158 +27,92 @@ const sessionFile = path.join(sessionDir, `${safeName}.json`);
   });
   const page = await browser.newPage();
 
-  // Listen for our "📥" logs from the page context
-  page.on('console', async msg => {
-    for (const arg of msg.args()) {
-      try {
-        const val = await arg.jsonValue();
-        if (typeof val === 'string' && val.startsWith('📥')) {
-          console.log(val);
-        }
-      } catch { /* ignore */ }
-    }
+  await page.exposeFunction('recordEvent', (event) => {
+    recordedEvents.push(event);
+    console.log(`📥 Recorded event: ${event.type} → ${event.detail?.text || event.detail?.value || '[no text]'}`);
   });
 
-  await page.evaluateOnNewDocument(initial => {
-    window.recordedEvents = initial;
-
-    // Build a CSS path to the element
-    function getSelector(el) {
-      if (!el || el.tagName.toLowerCase() === 'html') return '';
-      const parts = [];
-      while (el && el.tagName.toLowerCase() !== 'html') {
-        let sel = el.tagName.toLowerCase();
-        if (el.id) {
-          sel += `#${el.id}`;
-          parts.unshift(sel);
-          break;
-        }
-        if (el.classList.length) {
-          sel += Array.from(el.classList).map(c => `.${c}`).join('');
-        } else {
-          const siblings = el.parentNode
-            ? Array.from(el.parentNode.children).filter(s => s.tagName === el.tagName)
-            : [];
-          if (siblings.length > 1) {
-            const idx = siblings.indexOf(el) + 1;
-            sel += `:nth-of-type(${idx})`;
-          }
-        }
-        parts.unshift(sel);
-        el = el.parentElement;
-      }
-      return parts.join(' > ');
-    }
-
-    // Build an XPath to the element
-    function getXPath(el) {
+  await page.evaluateOnNewDocument(() => {
+    window.getSelector = el => {
       if (!el || el.nodeType !== 1) return '';
-      if (el.id) return `//*[@id="${el.id}"]`;
       const parts = [];
       while (el && el.nodeType === 1) {
-        let idx = 1, sib = el.previousSibling;
-        while (sib) {
-          if (sib.nodeType === 1 && sib.nodeName === el.nodeName) idx++;
-          sib = sib.previousSibling;
+        let part = el.tagName.toLowerCase();
+        if (el.id) {
+          part += `#${el.id}`;
+          parts.unshift(part);
+          break;
+        } else {
+          if (el.className) {
+            part += '.' + el.className.trim().split(/\s+/).join('.');
+          }
+          const siblings = Array.from(el.parentNode ? el.parentNode.children : []).filter(e => e.tagName === el.tagName);
+          if (siblings.length > 1) {
+            const index = siblings.indexOf(el) + 1;
+            part += `:nth-of-type(${index})`;
+          }
         }
-        parts.unshift(`${el.nodeName.toLowerCase()}[${idx}]`);
+        parts.unshift(part);
         el = el.parentNode;
       }
-      return '/' + parts.join('/');
-    }
+      return parts.join(' > ');
+    };
 
-    // Extract every bit of info from the element
-    function extractDetails(el) {
-      const attrs = {};
-      for (const a of el.attributes) {
-        attrs[a.name] = a.value;
-      }
-      const rect = el.getBoundingClientRect();
-      return {
-        tag: el.tagName,
-        text: el.innerText?.trim() || '',
-        id: el.id || '',
-        name: el.name || '',
-        className: el.className || '',
-        href: el.href || '',
-        type: el.type || '',
-        value: el.value || '',
-        checked: typeof el.checked === 'boolean' ? el.checked : undefined,
-        disabled: el.disabled === true,
-        attributes: attrs,
-        dataset: { ...el.dataset },
-        boundingClientRect: {
-          x: rect.x, y: rect.y,
-          width: rect.width, height: rect.height
-        },
-        selector: getSelector(el),
-        xpath: getXPath(el),
-        outerHTML: el.outerHTML?.slice(0, 1000) || ''
-      };
-    }
+    window.extractDetails = el => ({
+      tag: el.tagName,
+      text: el.innerText?.trim() || '',
+      id: el.id || '',
+      name: el.name || '',
+      className: el.className || '',
+      type: el.type || '',
+      value: el.value || '',
+      checked: el.checked ?? undefined,
+      selector: window.getSelector(el)
+    });
 
-    function record(event) {
-      window.recordedEvents.push(event);
-      // Prefix with 📥 so our Node listener sees it
-      console.log('📥 Recorded event:', event);
-    }
+    window._lastAction = { type: null, el: null, time: 0 };
 
     document.addEventListener('click', e => {
-      // prefer the exact thing clicked if it's one of our tags
-      let t = e.target;
-      if (!t.matches('button,a,input,label,span,div')) {
-        t = t.closest('button,a,input,label,span,div') || t;
-      }
-      const detail = extractDetails(t);
-
-      record({ type: 'click', detail, timestamp: Date.now() });
-
-      // your existing "waitFor" injections
-      if (/^continue$/i.test(detail.text)) {
-        const nextI = Array.from(document.querySelectorAll('input'))
-          .find(i => !i.disabled && i.offsetParent && i.closest('div')?.id);
-        if (nextI) {
-          const pid = nextI.closest('div').id;
-          record({
-            type: 'waitFor',
-            detail: { selector: `div#${pid} input`, timeout: 5000 },
-            timestamp: Date.now() + 50
-          });
-        }
-      }
-      if (detail.selector.includes('hungerTime')) {
-        record({
-          type: 'waitFor',
-          detail: { selector: detail.selector, timeout: 5000 },
-          timestamp: Date.now() + 50
-        });
-      }
-    });
+      const now = Date.now();
+      window._lastAction = { type: 'click', el: e.target, time: now };
+      const detail = window.extractDetails(e.target);
+      window.recordEvent({
+        type: 'click',
+        detail,
+        timestamp: now
+      });
+    }, true);
 
     document.addEventListener('input', e => {
-      const t = e.target;
-      const detail = extractDetails(t);
-      record({ type: 'input', detail, timestamp: Date.now() });
-    });
-
-    window.getRecordedEvents = () => window.recordedEvents;
-  }, recordedEvents);
+      const now = Date.now();
+      if (
+        window._lastAction.type === 'click' &&
+        (window._lastAction.el === e.target || window._lastAction.el.contains(e.target)) &&
+        now - window._lastAction.time < 300
+      ) {
+        // Skip input triggered by the prior click
+        console.log('⚠️ Skipped input caused by click');
+        return;
+      }
+      const detail = window.extractDetails(e.target);
+      window.recordEvent({
+        type: 'input',
+        detail,
+        timestamp: now
+      });
+    }, true);
+  });
 
   await page.goto(targetUrl, { waitUntil: 'domcontentloaded' });
   console.log(`🚀 Recording started at ${targetUrl}`);
 
-  async function saveAndExit() {
-    try {
-      const events = await page.evaluate(() => window.getRecordedEvents());
-      fs.writeFileSync(sessionFile, JSON.stringify(events, null, 2));
-      console.log(`✅ Session saved: ${sessionFile}`);
-    } catch (err) {
-      console.error('❌ Error saving session:', err);
-    }
+  const saveSession = async () => {
+    fs.writeFileSync(sessionFile, JSON.stringify(recordedEvents, null, 2));
+    console.log(`✅ Session saved: ${sessionFile}`);
     await browser.close();
     process.exit(0);
-  }
+  };
 
-  page.on('close', saveAndExit);
-  process.on('SIGINT', saveAndExit);
+  page.on('close', saveSession);
+  process.on('SIGINT', saveSession);
 })();

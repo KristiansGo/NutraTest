@@ -1,0 +1,1141 @@
+[
+  {
+    "type": "navigate",
+    "href": "https://v3.certifiedfasting.com/cz-cs/g-499m-czk-22m",
+    "timestamp": 1750855604262
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Muž",
+      "id": "",
+      "name": "",
+      "className": "pipe-clickable-card pipe-male",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div > div:nth-child(2) > div > form > div > div:nth-child(4) > button:nth-child(2)"
+    },
+    "timestamp": 1750855607782
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "27-38",
+      "id": "",
+      "name": "",
+      "className": "pipe-clickable-card age-range-2",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div > div:nth-child(2) > div > form > div > div:nth-child(5) > button:nth-child(2)"
+    },
+    "timestamp": 1750855609191
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Zhubněte",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-8",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > label"
+    },
+    "timestamp": 1750855610618
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "yourGoal-weight",
+      "name": "yourGoal",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#yourGoal-weight"
+    },
+    "timestamp": 1750855610621
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "yourGoal",
+      "value": "weight",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "yourGoal-weight",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#yourGoal-weight"
+    },
+    "timestamp": 1750855610621
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(4) > button > span > span"
+    },
+    "timestamp": 1750855611422
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Ovál",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn pipe-option-btn-with-art mb-8 pipe-body-type pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button"
+    },
+    "timestamp": 1750855613085
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Zkoušel/a jsem ho",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button"
+    },
+    "timestamp": 1750855614389
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "OK, chápu",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(5) > a > button > span > span"
+    },
+    "timestamp": 1750855615893
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Ráno",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-4",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > label"
+    },
+    "timestamp": 1750855616977
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "hungerTime-morning",
+      "name": "hungerTime",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#hungerTime-morning"
+    },
+    "timestamp": 1750855616980
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "hungerTime",
+      "value": "morning",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "hungerTime-morning",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#hungerTime-morning"
+    },
+    "timestamp": 1750855616980
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(5) > button > span > span"
+    },
+    "timestamp": 1750855617905
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Snídani obvykle vynechávám",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button > span"
+    },
+    "timestamp": 1750855619112
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Oběd obvykle vynechávám",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button > span"
+    },
+    "timestamp": 1750855620274
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Večeři obvykle vynechávám",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button > span"
+    },
+    "timestamp": 1750855621631
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Většinou si vařím sám/sama",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button > span"
+    },
+    "timestamp": 1750855622651
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Bylo by to pro mě těžké",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button"
+    },
+    "timestamp": 1750855623836
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Málo nebo žádné cvičení",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button > span:nth-child(2)"
+    },
+    "timestamp": 1750855624845
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Práce od devíti do pěti",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button"
+    },
+    "timestamp": 1750855625853
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Převážně sedavé činnosti (minimální chůze a stání)",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button > span"
+    },
+    "timestamp": 1750855626807
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Jen chci přerušovaný půst vyzkoušet",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button > span"
+    },
+    "timestamp": 1750855627745
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(4) > a > button > span > span"
+    },
+    "timestamp": 1750855628930
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "age",
+      "value": "2",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "age",
+      "className": "pipe-input",
+      "selector": "input#age"
+    },
+    "timestamp": 1750855631287
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "age",
+      "value": "27",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "age",
+      "className": "pipe-input",
+      "selector": "input#age"
+    },
+    "timestamp": 1750855631627
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750855632321
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "heightCm",
+      "value": "1",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "heightCm",
+      "className": "pipe-input",
+      "selector": "input#heightCm"
+    },
+    "timestamp": 1750855633259
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "heightCm",
+      "value": "18",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "heightCm",
+      "className": "pipe-input",
+      "selector": "input#heightCm"
+    },
+    "timestamp": 1750855633689
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "heightCm",
+      "value": "180",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "heightCm",
+      "className": "pipe-input",
+      "selector": "input#heightCm"
+    },
+    "timestamp": 1750855633945
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750855634455
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "weightKg",
+      "value": "8",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "weightKg",
+      "className": "pipe-input",
+      "selector": "input#weightKg"
+    },
+    "timestamp": 1750855635575
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "weightKg",
+      "value": "80",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "weightKg",
+      "className": "pipe-input",
+      "selector": "input#weightKg"
+    },
+    "timestamp": 1750855635900
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(5) > form > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750855636348
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(5) > form > div:nth-child(4) > button > span > span"
+    },
+    "timestamp": 1750855637515
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "firstName",
+      "value": "k",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "firstName",
+      "className": "pipe-input",
+      "selector": "input#firstName"
+    },
+    "timestamp": 1750855638774
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "firstName",
+      "value": "kg",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "firstName",
+      "className": "pipe-input",
+      "selector": "input#firstName"
+    },
+    "timestamp": 1750855639109
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(6) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750855639808
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(8) > button > span > span"
+    },
+    "timestamp": 1750855641424
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(7) > a > button > span > span"
+    },
+    "timestamp": 1750855643015
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(4) > a > button > span > span"
+    },
+    "timestamp": 1750855644404
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "7 až 8 hodin",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2)"
+    },
+    "timestamp": 1750855646016
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Ne",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-4",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > label"
+    },
+    "timestamp": 1750855647388
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "diets-no",
+      "name": "diets",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#diets-no"
+    },
+    "timestamp": 1750855647390
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "diets",
+      "value": "no",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "diets-no",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#diets-no"
+    },
+    "timestamp": 1750855647390
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(10) > button > span > span"
+    },
+    "timestamp": 1750855648419
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "1 sklenici nebo méně",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button > span:nth-child(2)"
+    },
+    "timestamp": 1750855649649
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Ano",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button"
+    },
+    "timestamp": 1750855650982
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Diabetes (v jakémkoli stadiu)",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-label",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > label > div:nth-child(2) > span:nth-child(2)"
+    },
+    "timestamp": 1750855652417
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "deseases-diabetes",
+      "name": "deseases",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#deseases-diabetes"
+    },
+    "timestamp": 1750855652419
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "deseases",
+      "value": "diabetes",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "deseases-diabetes",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#deseases-diabetes"
+    },
+    "timestamp": 1750855652419
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(11) > button > span > span"
+    },
+    "timestamp": 1750855653580
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Pokračovat",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div:nth-child(8) > a > button > span > span"
+    },
+    "timestamp": 1750855655220
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "k",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855670885
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kr",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855671008
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kri",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855671131
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kris",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855671236
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "krist",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855671447
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristi",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855671527
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristia",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855671677
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristian",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855671777
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855671881
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855672236
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+n",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855672567
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855672708
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855673178
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@n",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855673385
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nu",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855673596
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nut",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855673722
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutr",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855673902
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutra",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855674158
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutram",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855674284
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrame",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855674358
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855674541
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855674650
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.c",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855674768
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.co",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855674863
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.com",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750855675044
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn mt-10",
+      "href": "",
+      "type": "button",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(3) > button"
+    },
+    "timestamp": 1750855676807
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Chci získat svůj plán hubnutí",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > a > button > span > span"
+    },
+    "timestamp": 1750855679593
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Získat můj plán",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "div#stickyTrigger > button > span > span"
+    },
+    "timestamp": 1750855682613
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Zaplatit",
+      "id": "primer-submit-button",
+      "name": "",
+      "className": "pipe-btn",
+      "href": "",
+      "type": "submit",
+      "selector": "button#primer-submit-button"
+    },
+    "timestamp": 1750855686444
+  }
+]

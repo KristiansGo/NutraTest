@@ -1,14 +1,14 @@
 [
   {
     "type": "navigate",
-    "href": "https://v3.ketogo.app/de-de/k-22m-eur",
-    "timestamp": 1750443014992
+    "href": "https://v3.ketogo.app/fr-fr/k-22m-eur",
+    "timestamp": 1750854636156
   },
   {
     "type": "click",
     "detail": {
       "tag": "BUTTON",
-      "text": "Männlich",
+      "text": "Homme",
       "id": "",
       "name": "",
       "className": "pipe-clickable-card pipe-male",
@@ -16,7 +16,7 @@
       "type": "submit",
       "selector": "body:nth-child(2) > div > div:nth-child(3) > div > form > div > div:nth-child(3) > button:nth-child(2)"
     },
-    "timestamp": 1750443017649
+    "timestamp": 1750854642283
   },
   {
     "type": "click",
@@ -30,41 +30,41 @@
       "type": "submit",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button:nth-child(2)"
     },
-    "timestamp": 1750443019203
+    "timestamp": 1750854645177
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Meine Gesundheit verbessern",
+      "text": "Le physique et le bien-être",
       "id": "",
       "name": "",
       "className": "pipe-option-btn-label",
       "href": "",
       "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button:nth-child(2) > span"
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span"
     },
-    "timestamp": 1750443020676
+    "timestamp": 1750854646824
   },
   {
     "type": "click",
     "detail": {
       "tag": "BUTTON",
-      "text": "Noch nie davon gehört",
+      "text": "Je l’ai essayé",
       "id": "",
       "name": "",
       "className": "transition pipe-option-btn pipe-option-btn-selected",
       "href": "",
       "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button:nth-child(3)"
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
     },
-    "timestamp": 1750443021990
+    "timestamp": 1750854648597
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Weiter",
+      "text": "Suivant",
       "id": "",
       "name": "",
       "className": "",
@@ -72,55 +72,55 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > a > button > span > span"
     },
-    "timestamp": 1750443023450
+    "timestamp": 1750854650527
   },
   {
     "type": "click",
     "detail": {
       "tag": "LABEL",
-      "text": "Abends",
+      "text": "Le matin",
       "id": "",
       "name": "",
       "className": "pipe-option-btn-container mb-3",
       "href": "",
       "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label:nth-child(3)"
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label"
     },
-    "timestamp": 1750443025492
+    "timestamp": 1750854653888
   },
   {
     "type": "click",
     "detail": {
       "tag": "INPUT",
       "text": "",
-      "id": "whenFeelHungry-whenFeelHungry.answer_3",
+      "id": "whenFeelHungry-whenFeelHungry.answer_1",
       "name": "whenFeelHungry",
       "className": "pipe-option-btn-checkbox-input",
       "href": "",
       "type": "checkbox",
-      "selector": "input#whenFeelHungry-whenFeelHungry.answer_3"
+      "selector": "input#whenFeelHungry-whenFeelHungry.answer_1"
     },
-    "timestamp": 1750443025493
+    "timestamp": 1750854653890
   },
   {
     "type": "input",
     "detail": {
       "name": "whenFeelHungry",
-      "value": "whenFeelHungry.answer_3",
+      "value": "whenFeelHungry.answer_1",
       "checked": true,
       "tag": "input",
       "type": "checkbox",
-      "id": "whenFeelHungry-whenFeelHungry.answer_3",
+      "id": "whenFeelHungry-whenFeelHungry.answer_1",
       "className": "pipe-option-btn-checkbox-input",
-      "selector": "input#whenFeelHungry-whenFeelHungry.answer_3"
+      "selector": "input#whenFeelHungry-whenFeelHungry.answer_1"
     },
-    "timestamp": 1750443025493
+    "timestamp": 1750854653891
   },
   {
     "type": "click",
     "detail": {
       "tag": "BUTTON",
-      "text": "Weiter",
+      "text": "Suivant",
       "id": "",
       "name": "",
       "className": "pipe-btn ",
@@ -128,49 +128,49 @@
       "type": "submit",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button"
     },
-    "timestamp": 1750443026395
+    "timestamp": 1750854654627
   },
   {
     "type": "click",
     "detail": {
       "tag": "BUTTON",
-      "text": "Snacks",
+      "text": "Petit déjeuner",
       "id": "",
       "name": "",
       "className": "transition pipe-option-btn pipe-option-btn-selected",
       "href": "",
       "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button:nth-child(4)"
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
     },
-    "timestamp": 1750443028121
+    "timestamp": 1750854656945
   },
   {
     "type": "click",
     "detail": {
       "tag": "BUTTON",
-      "text": "Nein",
+      "text": "Oui",
       "id": "",
       "name": "",
       "className": "transition pipe-option-btn pipe-option-btn-selected",
       "href": "",
       "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button:nth-child(2)"
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
     },
-    "timestamp": 1750443029506
+    "timestamp": 1750854658642
   },
   {
     "type": "click",
     "detail": {
-      "tag": "SPAN",
-      "text": "Fortfahren",
+      "tag": "BUTTON",
+      "text": "Continuer",
       "id": "",
       "name": "",
-      "className": "",
+      "className": "pipe-btn pipe-btn-outlined",
       "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > a > button > span > span"
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > a > button"
     },
-    "timestamp": 1750443031312
+    "timestamp": 1750854660460
   },
   {
     "type": "input",
@@ -184,7 +184,7 @@
       "className": "pipe-input",
       "selector": "input#heightCm"
     },
-    "timestamp": 1750443032392
+    "timestamp": 1750854662092
   },
   {
     "type": "input",
@@ -198,7 +198,7 @@
       "className": "pipe-input",
       "selector": "input#heightCm"
     },
-    "timestamp": 1750443032708
+    "timestamp": 1750854662472
   },
   {
     "type": "input",
@@ -212,21 +212,21 @@
       "className": "pipe-input",
       "selector": "input#heightCm"
     },
-    "timestamp": 1750443032869
+    "timestamp": 1750854662635
   },
   {
     "type": "click",
     "detail": {
-      "tag": "SPAN",
-      "text": "Fortfahren",
+      "tag": "BUTTON",
+      "text": "Continuer",
       "id": "",
       "name": "",
-      "className": "",
+      "className": "pipe-btn ",
       "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(3) > button > span"
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(3) > button"
     },
-    "timestamp": 1750443033315
+    "timestamp": 1750854663104
   },
   {
     "type": "input",
@@ -240,7 +240,7 @@
       "className": "pipe-input",
       "selector": "input#weightKg"
     },
-    "timestamp": 1750443034361
+    "timestamp": 1750854664490
   },
   {
     "type": "input",
@@ -254,41 +254,41 @@
       "className": "pipe-input",
       "selector": "input#weightKg"
     },
-    "timestamp": 1750443034602
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "Fortfahren",
-      "id": "",
-      "name": "",
-      "className": "pipe-btn ",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(8) > button"
-    },
-    "timestamp": 1750443035527
+    "timestamp": 1750854664680
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Fortfahren",
+      "text": "Continuer",
       "id": "",
       "name": "",
       "className": "",
       "href": "",
       "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(9) > button > span"
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(8) > button > span > span"
     },
-    "timestamp": 1750443037017
+    "timestamp": 1750854665747
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Fortfahren",
+      "text": "Continuer",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(9) > button > span > span"
+    },
+    "timestamp": 1750854667161
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continuer",
       "id": "",
       "name": "",
       "className": "",
@@ -296,13 +296,27 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > a > button > span > span"
     },
-    "timestamp": 1750443038438
+    "timestamp": 1750854668832
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "firstName",
+      "name": "firstName",
+      "className": "pipe-input",
+      "href": "",
+      "type": "text",
+      "selector": "input#firstName"
+    },
+    "timestamp": 1750854669973
   },
   {
     "type": "input",
     "detail": {
       "name": "firstName",
-      "value": "K",
+      "value": "k",
       "checked": false,
       "tag": "input",
       "type": "text",
@@ -310,13 +324,13 @@
       "className": "pipe-input",
       "selector": "input#firstName"
     },
-    "timestamp": 1750443040555
+    "timestamp": 1750854670973
   },
   {
     "type": "input",
     "detail": {
       "name": "firstName",
-      "value": "KG",
+      "value": "kg",
       "checked": false,
       "tag": "input",
       "type": "text",
@@ -324,13 +338,13 @@
       "className": "pipe-input",
       "selector": "input#firstName"
     },
-    "timestamp": 1750443040673
+    "timestamp": 1750854671278
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Weiter",
+      "text": "Suivant",
       "id": "",
       "name": "",
       "className": "",
@@ -338,13 +352,13 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button > span > span"
     },
-    "timestamp": 1750443041632
+    "timestamp": 1750854672376
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Fortfahren",
+      "text": "Continuer",
       "id": "",
       "name": "",
       "className": "",
@@ -352,27 +366,27 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(3) > div:nth-child(3) > button > span > span"
     },
-    "timestamp": 1750443043366
+    "timestamp": 1750854673483
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Ein wenig Bewegung (1-2 Workouts)",
+      "text": "Peu ou pas du tout d'exercice",
       "id": "",
       "name": "",
       "className": "",
       "href": "",
       "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button:nth-child(2) > span:nth-child(2)"
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button > span:nth-child(2)"
     },
-    "timestamp": 1750443045102
+    "timestamp": 1750854674893
   },
   {
     "type": "click",
     "detail": {
       "tag": "BUTTON",
-      "text": "Weniger als 1 Jahr",
+      "text": "Moins d'un an",
       "id": "",
       "name": "",
       "className": "transition pipe-option-btn pipe-option-btn-selected",
@@ -380,55 +394,55 @@
       "type": "submit",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
     },
-    "timestamp": 1750443046554
+    "timestamp": 1750854676472
   },
   {
     "type": "click",
     "detail": {
       "tag": "BUTTON",
-      "text": "XXL",
+      "text": "XXXL+",
       "id": "",
       "name": "",
       "className": "transition pipe-option-btn pipe-option-btn-selected",
       "href": "",
       "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button:nth-child(3)"
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
     },
-    "timestamp": 1750443047892
+    "timestamp": 1750854678463
   },
   {
     "type": "click",
     "detail": {
       "tag": "BUTTON",
-      "text": "L",
+      "text": "XXXL+",
       "id": "",
       "name": "",
       "className": "transition pipe-option-btn pipe-option-btn-selected",
       "href": "",
       "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button:nth-child(5)"
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
     },
-    "timestamp": 1750443049011
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "Fortfahren",
-      "id": "",
-      "name": "",
-      "className": "pipe-btn ",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(7) > a > button"
-    },
-    "timestamp": 1750443050598
+    "timestamp": 1750854679859
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Ich esse fast jeden Tag dasselbe Essen",
+      "text": "Continuer",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(7) > a > button > span > span"
+    },
+    "timestamp": 1750854681949
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Je mange la même nourriture presque tous les jours",
       "id": "",
       "name": "",
       "className": "",
@@ -436,69 +450,69 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button > span"
     },
-    "timestamp": 1750443052100
+    "timestamp": 1750854683989
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Fortfahren",
+      "text": "Continuer",
       "id": "",
       "name": "",
       "className": "",
       "href": "",
       "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > a > button > span > span"
+      "selector": "body:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > a > button > span"
     },
-    "timestamp": 1750443054753
+    "timestamp": 1750854685893
   },
   {
     "type": "click",
     "detail": {
       "tag": "LABEL",
-      "text": "Butter",
+      "text": "Avocat",
       "id": "",
       "name": "",
       "className": "pipe-option-btn-container mb-3",
       "href": "",
       "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label:nth-child(4)"
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label"
     },
-    "timestamp": 1750443056425
+    "timestamp": 1750854687537
   },
   {
     "type": "click",
     "detail": {
       "tag": "INPUT",
       "text": "",
-      "id": "favIngredients-butter",
+      "id": "favIngredients-avocado",
       "name": "favIngredients",
       "className": "pipe-option-btn-checkbox-input",
       "href": "",
       "type": "checkbox",
-      "selector": "input#favIngredients-butter"
+      "selector": "input#favIngredients-avocado"
     },
-    "timestamp": 1750443056425
+    "timestamp": 1750854687538
   },
   {
     "type": "input",
     "detail": {
       "name": "favIngredients",
-      "value": "butter",
+      "value": "avocado",
       "checked": true,
       "tag": "input",
       "type": "checkbox",
-      "id": "favIngredients-butter",
+      "id": "favIngredients-avocado",
       "className": "pipe-option-btn-checkbox-input",
-      "selector": "input#favIngredients-butter"
+      "selector": "input#favIngredients-avocado"
     },
-    "timestamp": 1750443056425
+    "timestamp": 1750854687538
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Weiter",
+      "text": "Suivant",
       "id": "",
       "name": "",
       "className": "",
@@ -506,69 +520,13 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span > span"
     },
-    "timestamp": 1750443057118
+    "timestamp": 1750854688888
   },
   {
     "type": "click",
     "detail": {
       "tag": "LABEL",
-      "text": "Eier",
-      "id": "",
-      "name": "",
-      "className": "pipe-option-btn-container mb-3",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div > label:nth-child(2)"
-    },
-    "timestamp": 1750443058373
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "INPUT",
-      "text": "",
-      "id": "preferredProtein-eggs",
-      "name": "preferredProtein",
-      "className": "pipe-option-btn-checkbox-input",
-      "href": "",
-      "type": "checkbox",
-      "selector": "input#preferredProtein-eggs"
-    },
-    "timestamp": 1750443058373
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "preferredProtein",
-      "value": "eggs",
-      "checked": true,
-      "tag": "input",
-      "type": "checkbox",
-      "id": "preferredProtein-eggs",
-      "className": "pipe-option-btn-checkbox-input",
-      "selector": "input#preferredProtein-eggs"
-    },
-    "timestamp": 1750443058373
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "Weiter",
-      "id": "",
-      "name": "",
-      "className": "pipe-btn ",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button"
-    },
-    "timestamp": 1750443059133
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "LABEL",
-      "text": "Keine",
+      "text": "Je mange de tout",
       "id": "",
       "name": "",
       "className": "pipe-option-btn-container mb-3",
@@ -576,7 +534,63 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div > label"
     },
-    "timestamp": 1750443060470
+    "timestamp": 1750854691205
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "preferredProtein-all",
+      "name": "preferredProtein",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#preferredProtein-all"
+    },
+    "timestamp": 1750854691206
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "preferredProtein",
+      "value": "all",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "preferredProtein-all",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#preferredProtein-all"
+    },
+    "timestamp": 1750854691206
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Suivant",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750854692638
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Aucun",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div > label"
+    },
+    "timestamp": 1750854693840
   },
   {
     "type": "click",
@@ -590,7 +604,7 @@
       "type": "checkbox",
       "selector": "input#foodAllergies-foodAllergies.answer_1"
     },
-    "timestamp": 1750443060470
+    "timestamp": 1750854693841
   },
   {
     "type": "input",
@@ -604,13 +618,13 @@
       "className": "pipe-option-btn-checkbox-input",
       "selector": "input#foodAllergies-foodAllergies.answer_1"
     },
-    "timestamp": 1750443060471
+    "timestamp": 1750854693841
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Weiter",
+      "text": "Suivant",
       "id": "",
       "name": "",
       "className": "",
@@ -618,251 +632,13 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button > span > span"
     },
-    "timestamp": 1750443061579
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "Fortfahren",
-      "id": "",
-      "name": "",
-      "className": "pipe-btn pipe-btn-outlined",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a > button"
-    },
-    "timestamp": 1750443063182
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "5–6 Stunden",
-      "id": "",
-      "name": "",
-      "className": "transition pipe-option-btn pipe-option-btn-selected",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button:nth-child(3)"
-    },
-    "timestamp": 1750443064292
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "4-5 Gläser",
-      "id": "",
-      "name": "",
-      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button:nth-child(3)"
-    },
-    "timestamp": 1750443065266
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "Ich bin in Rente",
-      "id": "",
-      "name": "",
-      "className": "transition pipe-option-btn pipe-option-btn-selected",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button:nth-child(4)"
-    },
-    "timestamp": 1750443066171
+    "timestamp": 1750854694756
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Starker körperlicher Einsatz (schwere Arbeit)",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button:nth-child(3) > span"
-    },
-    "timestamp": 1750443067241
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "LABEL",
-      "text": "Vitamine",
-      "id": "",
-      "name": "",
-      "className": "pipe-option-btn-container mb-3",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label:nth-child(4)"
-    },
-    "timestamp": 1750443069560
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "INPUT",
-      "text": "",
-      "id": "medication-medication.answer_4",
-      "name": "medication",
-      "className": "pipe-option-btn-checkbox-input",
-      "href": "",
-      "type": "checkbox",
-      "selector": "input#medication-medication.answer_4"
-    },
-    "timestamp": 1750443069561
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "medication",
-      "value": "medication.answer_4",
-      "checked": true,
-      "tag": "input",
-      "type": "checkbox",
-      "id": "medication-medication.answer_4",
-      "className": "pipe-option-btn-checkbox-input",
-      "selector": "input#medication-medication.answer_4"
-    },
-    "timestamp": 1750443069561
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "Weiter",
-      "id": "",
-      "name": "",
-      "className": "pipe-btn ",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button"
-    },
-    "timestamp": 1750443070169
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Schlafapnoe-Syndrom",
-      "id": "",
-      "name": "",
-      "className": "pipe-option-btn-label",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label:nth-child(3) > div:nth-child(2) > span:nth-child(2)"
-    },
-    "timestamp": 1750443071912
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "INPUT",
-      "text": "",
-      "id": "diseases-diseases.answer_3",
-      "name": "diseases",
-      "className": "pipe-option-btn-checkbox-input",
-      "href": "",
-      "type": "checkbox",
-      "selector": "input#diseases-diseases.answer_3"
-    },
-    "timestamp": 1750443071913
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "diseases",
-      "value": "diseases.answer_3",
-      "checked": true,
-      "tag": "input",
-      "type": "checkbox",
-      "id": "diseases-diseases.answer_3",
-      "className": "pipe-option-btn-checkbox-input",
-      "selector": "input#diseases-diseases.answer_3"
-    },
-    "timestamp": 1750443071913
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "Weiter",
-      "id": "",
-      "name": "",
-      "className": "pipe-btn ",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button"
-    },
-    "timestamp": 1750443072647
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Besser aussehen",
-      "id": "",
-      "name": "",
-      "className": "pipe-option-btn-label",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label:nth-child(2) > div:nth-child(2) > span:nth-child(2)"
-    },
-    "timestamp": 1750443073850
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "INPUT",
-      "text": "",
-      "id": "additionalGoal-additionalGoal.answer_2",
-      "name": "additionalGoal",
-      "className": "pipe-option-btn-checkbox-input",
-      "href": "",
-      "type": "checkbox",
-      "selector": "input#additionalGoal-additionalGoal.answer_2"
-    },
-    "timestamp": 1750443073850
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "additionalGoal",
-      "value": "additionalGoal.answer_2",
-      "checked": true,
-      "tag": "input",
-      "type": "checkbox",
-      "id": "additionalGoal-additionalGoal.answer_2",
-      "className": "pipe-option-btn-checkbox-input",
-      "selector": "input#additionalGoal-additionalGoal.answer_2"
-    },
-    "timestamp": 1750443073850
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Weiter",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span > span"
-    },
-    "timestamp": 1750443074543
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Fortfahren",
+      "text": "Continuer",
       "id": "",
       "name": "",
       "className": "",
@@ -870,13 +646,251 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a > button > span > span"
     },
-    "timestamp": 1750443076261
+    "timestamp": 1750854696459
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Plus de 8 heures",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
+    },
+    "timestamp": 1750854698047
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "1 verre ou moins",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
+    },
+    "timestamp": 1750854699997
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Travail de 9 h à 17 h",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
+    },
+    "timestamp": 1750854701882
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Fortfahren",
+      "text": "Essentiellement sédentaire (peu de marche et de station debout)",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button > span"
+    },
+    "timestamp": 1750854703843
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Antibiotiques",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label"
+    },
+    "timestamp": 1750854705653
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "medication-medication.answer_1",
+      "name": "medication",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#medication-medication.answer_1"
+    },
+    "timestamp": 1750854705655
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "medication",
+      "value": "medication.answer_1",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "medication-medication.answer_1",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#medication-medication.answer_1"
+    },
+    "timestamp": 1750854705655
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Suivant",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750854707090
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Diabète (n'importe quel stade)",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-label",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label > div:nth-child(2) > span:nth-child(2)"
+    },
+    "timestamp": 1750854708663
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "diseases-diseases.answer_1",
+      "name": "diseases",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#diseases-diseases.answer_1"
+    },
+    "timestamp": 1750854708664
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "diseases",
+      "value": "diseases.answer_1",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "diseases-diseases.answer_1",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#diseases-diseases.answer_1"
+    },
+    "timestamp": 1750854708664
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Suivant",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750854710204
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Courir sur 5 km",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label"
+    },
+    "timestamp": 1750854712678
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "additionalGoal-additionalGoal.answer_1",
+      "name": "additionalGoal",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#additionalGoal-additionalGoal.answer_1"
+    },
+    "timestamp": 1750854712680
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "additionalGoal",
+      "value": "additionalGoal.answer_1",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "additionalGoal-additionalGoal.answer_1",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#additionalGoal-additionalGoal.answer_1"
+    },
+    "timestamp": 1750854712680
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Suivant",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750854714962
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continuer",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a > button > span > span"
+    },
+    "timestamp": 1750854717748
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continuer",
       "id": "",
       "name": "",
       "className": "",
@@ -884,7 +898,21 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(3) > div:nth-child(3) > button > span > span"
     },
-    "timestamp": 1750443078197
+    "timestamp": 1750854719768
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "email",
+      "name": "email",
+      "className": "pipe-input",
+      "href": "",
+      "type": "email",
+      "selector": "input#email"
+    },
+    "timestamp": 1750854733336
   },
   {
     "type": "input",
@@ -898,7 +926,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443092835
+    "timestamp": 1750854734752
   },
   {
     "type": "input",
@@ -912,7 +940,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443092937
+    "timestamp": 1750854734836
   },
   {
     "type": "input",
@@ -926,7 +954,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443093050
+    "timestamp": 1750854734945
   },
   {
     "type": "input",
@@ -940,7 +968,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443093169
+    "timestamp": 1750854735037
   },
   {
     "type": "input",
@@ -954,7 +982,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443093372
+    "timestamp": 1750854735235
   },
   {
     "type": "input",
@@ -968,7 +996,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443093507
+    "timestamp": 1750854735336
   },
   {
     "type": "input",
@@ -982,7 +1010,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443093615
+    "timestamp": 1750854735472
   },
   {
     "type": "input",
@@ -996,7 +1024,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443093754
+    "timestamp": 1750854735578
   },
   {
     "type": "input",
@@ -1010,7 +1038,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443093856
+    "timestamp": 1750854735644
   },
   {
     "type": "input",
@@ -1024,7 +1052,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443094790
+    "timestamp": 1750854735991
   },
   {
     "type": "input",
@@ -1038,7 +1066,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443095119
+    "timestamp": 1750854736283
   },
   {
     "type": "input",
@@ -1052,7 +1080,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443095272
+    "timestamp": 1750854736383
   },
   {
     "type": "input",
@@ -1066,7 +1094,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443095700
+    "timestamp": 1750854736886
   },
   {
     "type": "input",
@@ -1080,7 +1108,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443095919
+    "timestamp": 1750854737065
   },
   {
     "type": "input",
@@ -1094,7 +1122,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443096123
+    "timestamp": 1750854737261
   },
   {
     "type": "input",
@@ -1108,7 +1136,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443096272
+    "timestamp": 1750854737379
   },
   {
     "type": "input",
@@ -1122,7 +1150,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443096472
+    "timestamp": 1750854737562
   },
   {
     "type": "input",
@@ -1136,7 +1164,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443096713
+    "timestamp": 1750854737846
   },
   {
     "type": "input",
@@ -1150,7 +1178,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443096824
+    "timestamp": 1750854738148
   },
   {
     "type": "input",
@@ -1164,7 +1192,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443097027
+    "timestamp": 1750854738207
   },
   {
     "type": "input",
@@ -1178,7 +1206,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443097224
+    "timestamp": 1750854738382
   },
   {
     "type": "input",
@@ -1192,7 +1220,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443097292
+    "timestamp": 1750854738501
   },
   {
     "type": "input",
@@ -1206,7 +1234,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443097429
+    "timestamp": 1750854738576
   },
   {
     "type": "input",
@@ -1220,7 +1248,7 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443097527
+    "timestamp": 1750854738704
   },
   {
     "type": "input",
@@ -1234,7 +1262,65 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750443097725
+    "timestamp": 1750854738869
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continuer",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(3) > button > span > span"
+    },
+    "timestamp": 1750854740464
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Obtenir mon programme",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "div#stickyTrigger > button > span > span"
+    },
+    "timestamp": 1750854743383
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Paie de façon sécurisée",
+      "id": "",
+      "name": "",
+      "className": "submit-button-text",
+      "href": "",
+      "type": "",
+      "selector": "button#submit-button > span"
+    },
+    "timestamp": 1750854747238
+  }
+]143
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.com",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750854309359
   },
   {
     "type": "click",
@@ -1248,13 +1334,13 @@
       "type": "button",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(3) > button"
     },
-    "timestamp": 1750443099379
+    "timestamp": 1750854310966
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Ich möchte meinen Plan",
+      "text": "Obtenir mon programme",
       "id": "",
       "name": "",
       "className": "",
@@ -1262,20 +1348,20 @@
       "type": "",
       "selector": "div#stickyTrigger > button > span > span"
     },
-    "timestamp": 1750443102829
+    "timestamp": 1750854314210
   },
   {
     "type": "click",
     "detail": {
-      "tag": "BUTTON",
-      "text": "Sichere Zahlung vornehmen",
-      "id": "submit-button",
-      "name": "submit",
-      "className": "submit-button",
+      "tag": "SPAN",
+      "text": "Paie de façon sécurisée",
+      "id": "",
+      "name": "",
+      "className": "submit-button-text",
       "href": "",
-      "type": "button",
-      "selector": "button#submit-button"
+      "type": "",
+      "selector": "button#submit-button > span"
     },
-    "timestamp": 1750443106439
+    "timestamp": 1750854317733
   }
 ]

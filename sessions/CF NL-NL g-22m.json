@@ -1,0 +1,1141 @@
+[
+  {
+    "type": "navigate",
+    "href": "https://v3.certifiedfasting.com/nl-nl/g-22m-eur",
+    "timestamp": 1750853241691
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Man",
+      "id": "",
+      "name": "",
+      "className": "pipe-clickable-card pipe-male",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div > div:nth-child(2) > div > form > div > div:nth-child(4) > button:nth-child(2)"
+    },
+    "timestamp": 1750853245694
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "27-38",
+      "id": "",
+      "name": "",
+      "className": "pipe-clickable-card age-range-2",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div > div:nth-child(2) > div > form > div > div:nth-child(5) > button:nth-child(2)"
+    },
+    "timestamp": 1750853246977
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Algehele gezondheid verbeteren",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-label",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > label:nth-child(2) > div:nth-child(2) > span:nth-child(2)"
+    },
+    "timestamp": 1750853247925
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "yourGoal-health",
+      "name": "yourGoal",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#yourGoal-health"
+    },
+    "timestamp": 1750853247928
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "yourGoal",
+      "value": "health",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "yourGoal-health",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#yourGoal-health"
+    },
+    "timestamp": 1750853247928
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(4) > button > span > span"
+    },
+    "timestamp": 1750853248751
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Ovaal",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn pipe-option-btn-with-art mb-8 pipe-body-type pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button"
+    },
+    "timestamp": 1750853249684
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Ik heb er van gehoord",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2)"
+    },
+    "timestamp": 1750853250642
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Ik begrijp het",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(5) > a > button > span > span"
+    },
+    "timestamp": 1750853251555
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Middag",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-4",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > label:nth-child(2)"
+    },
+    "timestamp": 1750853252390
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "hungerTime-afternoon",
+      "name": "hungerTime",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#hungerTime-afternoon"
+    },
+    "timestamp": 1750853252393
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "hungerTime",
+      "value": "afternoon",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "hungerTime-afternoon",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#hungerTime-afternoon"
+    },
+    "timestamp": 1750853252393
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(5) > button > span > span"
+    },
+    "timestamp": 1750853253140
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Meestal sla ik het ontbijt over",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button > span"
+    },
+    "timestamp": 1750853254166
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "12.00 - 14.00 uur",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(3)"
+    },
+    "timestamp": 1750853254996
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "20.00 - 22.00 uur of later",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(4)"
+    },
+    "timestamp": 1750853256008
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Meestal kookt er thuis iemand voor me",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2) > span"
+    },
+    "timestamp": 1750853256892
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Ja, ik kan het!",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2)"
+    },
+    "timestamp": 1750853257813
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Redelijk actief (3-5 workouts)",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(3) > span:nth-child(2)"
+    },
+    "timestamp": 1750853258501
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Onregelmatig, verschillende diensten",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(3) > span"
+    },
+    "timestamp": 1750853259386
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Overwegend fysiek (meestal lopen, staan)",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2) > span"
+    },
+    "timestamp": 1750853260525
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Ik wil zo veel mogelijk afvallen",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(3) > span"
+    },
+    "timestamp": 1750853261443
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(4) > a > button > span > span"
+    },
+    "timestamp": 1750853262543
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "age",
+      "value": "2",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "age",
+      "className": "pipe-input",
+      "selector": "input#age"
+    },
+    "timestamp": 1750853264011
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "age",
+      "value": "27",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "age",
+      "className": "pipe-input",
+      "selector": "input#age"
+    },
+    "timestamp": 1750853264379
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750853264951
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "heightCm",
+      "value": "1",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "heightCm",
+      "className": "pipe-input",
+      "selector": "input#heightCm"
+    },
+    "timestamp": 1750853265864
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "heightCm",
+      "value": "18",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "heightCm",
+      "className": "pipe-input",
+      "selector": "input#heightCm"
+    },
+    "timestamp": 1750853266277
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "heightCm",
+      "value": "180",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "heightCm",
+      "className": "pipe-input",
+      "selector": "input#heightCm"
+    },
+    "timestamp": 1750853266505
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750853267429
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "weightKg",
+      "value": "8",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "weightKg",
+      "className": "pipe-input",
+      "selector": "input#weightKg"
+    },
+    "timestamp": 1750853268487
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "weightKg",
+      "value": "80",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "weightKg",
+      "className": "pipe-input",
+      "selector": "input#weightKg"
+    },
+    "timestamp": 1750853268701
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(5) > form > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750853269284
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(5) > form > div:nth-child(4) > button > span > span"
+    },
+    "timestamp": 1750853270576
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "firstName",
+      "value": "k",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "firstName",
+      "className": "pipe-input",
+      "selector": "input#firstName"
+    },
+    "timestamp": 1750853272151
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "firstName",
+      "value": "kg",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "firstName",
+      "className": "pipe-input",
+      "selector": "input#firstName"
+    },
+    "timestamp": 1750853272582
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(6) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750853273133
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(8) > button > span > span"
+    },
+    "timestamp": 1750853274285
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(7) > a > button > span > span"
+    },
+    "timestamp": 1750853275311
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(4) > a > button > span > span"
+    },
+    "timestamp": 1750853276503
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "5–6 uur",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(3)"
+    },
+    "timestamp": 1750853277604
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Nee, dat doe ik niet",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-label",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > label > div:nth-child(2) > span:nth-child(2)"
+    },
+    "timestamp": 1750853278590
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "diets-no",
+      "name": "diets",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#diets-no"
+    },
+    "timestamp": 1750853278591
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "diets",
+      "value": "no",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "diets-no",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#diets-no"
+    },
+    "timestamp": 1750853278591
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(10) > button > span > span"
+    },
+    "timestamp": 1750853279310
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "2–3 glazen",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2)"
+    },
+    "timestamp": 1750853280475
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Nee",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > button:nth-child(2)"
+    },
+    "timestamp": 1750853281415
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Refluxziekte",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-4",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > label:nth-child(2)"
+    },
+    "timestamp": 1750853282251
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "deseases-acid_reflux",
+      "name": "deseases",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#deseases-acid_reflux"
+    },
+    "timestamp": 1750853282253
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "deseases",
+      "value": "acid_reflux",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "deseases-acid_reflux",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#deseases-acid_reflux"
+    },
+    "timestamp": 1750853282253
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(11) > button > span > span"
+    },
+    "timestamp": 1750853283121
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Doorgaan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(3) > div:nth-child(8) > a > button > span > span"
+    },
+    "timestamp": 1750853284117
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "k",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853298429
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kr",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853298514
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kri",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853298637
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kris",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853298713
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "krist",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853298931
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristi",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853299041
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristia",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853299156
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristian",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853299290
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853299374
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853299834
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+n",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853300171
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853300397
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853300771
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@n",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853300988
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nu",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853301180
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nut",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853301298
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutr",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853301483
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutra",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853301708
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutram",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853301829
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrame",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853301992
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853302196
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853302310
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.c",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853302402
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.co",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853302522
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.com",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750853302703
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn mt-10",
+      "href": "",
+      "type": "button",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(3) > button"
+    },
+    "timestamp": 1750853304044
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Mijn afslankprogramma ontvangen",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div:nth-child(3) > div > div:nth-child(3) > a > button > span > span"
+    },
+    "timestamp": 1750853306043
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Bestel mijn plan",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn-timer-label",
+      "href": "",
+      "type": "",
+      "selector": "div#stickyTrigger > button > span"
+    },
+    "timestamp": 1750853308159
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Betalen",
+      "id": "primer-submit-button",
+      "name": "",
+      "className": "pipe-btn",
+      "href": "",
+      "type": "submit",
+      "selector": "button#primer-submit-button"
+    },
+    "timestamp": 1750853311744
+  }
+]

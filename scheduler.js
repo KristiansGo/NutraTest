@@ -85,7 +85,7 @@ function scheduleTestRun(testName) {
     startTimer();
     scheduledJobs.set(testName, job);
 
-    log(`🕒 Scheduled test "${testName}" to run every 5 minutes (offset from now)`);
+    log(`🕒 Scheduled test "${testName}" to run every 60 minutes (offset from now)`);
 }
 
 // Cancel schedule
