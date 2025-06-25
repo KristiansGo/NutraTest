@@ -2,7 +2,7 @@
   {
     "type": "navigate",
     "href": "https://fastingff.best.me/us-en-g-22m-usd/",
-    "timestamp": 1750858112024
+    "timestamp": 1750859984579
   },
   {
     "type": "click",
@@ -16,7 +16,7 @@
       "type": "button",
       "selector": "div#gender > div > div > button:nth-child(2)"
     },
-    "timestamp": 1750858115468
+    "timestamp": 1750859991976
   },
   {
     "type": "click",
@@ -30,21 +30,21 @@
       "type": "button",
       "selector": "div > div > button:nth-child(2)"
     },
-    "timestamp": 1750858117658
+    "timestamp": 1750859994173
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Improve overall health",
+      "text": "Lose weight",
       "id": "",
       "name": "",
-      "className": " svelte-kfp6vj",
+      "className": "label svelte-1lju9rv",
       "href": "",
       "type": "",
-      "selector": "div#yourGoal > div > button:nth-child(2) > div > span:nth-child(2) > span"
+      "selector": "div#yourGoal > div > button > div > span:nth-child(2)"
     },
-    "timestamp": 1750858118708
+    "timestamp": 1750859996859
   },
   {
     "type": "click",
@@ -58,7 +58,7 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858119682
+    "timestamp": 1750859998911
   },
   {
     "type": "click",
@@ -72,7 +72,7 @@
       "type": "",
       "selector": "div > button > div > span"
     },
-    "timestamp": 1750858127597
+    "timestamp": 1750860001528
   },
   {
     "type": "click",
@@ -86,7 +86,7 @@
       "type": "",
       "selector": "div > button > div > span"
     },
-    "timestamp": 1750858129238
+    "timestamp": 1750860004771
   },
   {
     "type": "click",
@@ -100,7 +100,7 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858131161
+    "timestamp": 1750860008112
   },
   {
     "type": "click",
@@ -114,7 +114,7 @@
       "type": "",
       "selector": "div#hungerTime > div > button > div > span"
     },
-    "timestamp": 1750858132733
+    "timestamp": 1750860011921
   },
   {
     "type": "click",
@@ -128,7 +128,7 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858134460
+    "timestamp": 1750860014133
   },
   {
     "type": "click",
@@ -137,12 +137,12 @@
       "text": "I usually skip breakfast",
       "id": "",
       "name": "",
-      "className": " svelte-kfp6vj",
+      "className": "label svelte-1lju9rv",
       "href": "",
       "type": "",
-      "selector": "div > button > div > span > span"
+      "selector": "div > button > div > span"
     },
-    "timestamp": 1750858136625
+    "timestamp": 1750860017371
   },
   {
     "type": "click",
@@ -156,7 +156,7 @@
       "type": "",
       "selector": "div > button > div > span"
     },
-    "timestamp": 1750858138921
+    "timestamp": 1750860021328
   },
   {
     "type": "click",
@@ -170,7 +170,7 @@
       "type": "",
       "selector": "div > button > div > span"
     },
-    "timestamp": 1750858140977
+    "timestamp": 1750860024441
   },
   {
     "type": "click",
@@ -179,12 +179,12 @@
       "text": "I mostly cook them myself",
       "id": "",
       "name": "",
-      "className": "label svelte-1lju9rv",
+      "className": " svelte-kfp6vj",
       "href": "",
       "type": "",
-      "selector": "div > button > div > span"
+      "selector": "div > button > div > span > span"
     },
-    "timestamp": 1750858142479
+    "timestamp": 1750860027044
   },
   {
     "type": "click",
@@ -193,12 +193,12 @@
       "text": "That would be hard for me",
       "id": "",
       "name": "",
-      "className": "label svelte-1lju9rv",
+      "className": " svelte-kfp6vj",
       "href": "",
       "type": "",
-      "selector": "div > button > div > span"
+      "selector": "div > button > div > span > span"
     },
-    "timestamp": 1750858143868
+    "timestamp": 1750860030212
   },
   {
     "type": "click",
@@ -212,7 +212,7 @@
       "type": "",
       "selector": "div > button > div > span:nth-child(2) > span"
     },
-    "timestamp": 1750858144986
+    "timestamp": 1750860033268
   },
   {
     "type": "click",
@@ -226,7 +226,7 @@
       "type": "",
       "selector": "div > button > div > span"
     },
-    "timestamp": 1750858146614
+    "timestamp": 1750860035617
   },
   {
     "type": "click",
@@ -240,7 +240,7 @@
       "type": "",
       "selector": "div > button > div > span > span"
     },
-    "timestamp": 1750858148202
+    "timestamp": 1750860037934
   },
   {
     "type": "click",
@@ -254,21 +254,21 @@
       "type": "",
       "selector": "div > button > div > span > span"
     },
-    "timestamp": 1750858149526
+    "timestamp": 1750860040024
   },
   {
     "type": "click",
     "detail": {
-      "tag": "BUTTON",
+      "tag": "SPAN",
       "text": "Continue",
       "id": "",
       "name": "",
-      "className": "svelte-ukzjgr loading",
+      "className": " svelte-kfp6vj",
       "href": "",
-      "type": "submit",
-      "selector": "button"
+      "type": "",
+      "selector": "button > span"
     },
-    "timestamp": 1750858152181
+    "timestamp": 1750860043139
   },
   {
     "type": "click",
@@ -282,7 +282,7 @@
       "type": "text",
       "selector": "div#age > input"
     },
-    "timestamp": 1750858154701
+    "timestamp": 1750860045983
   },
   {
     "type": "input",
@@ -296,7 +296,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#age > input"
     },
-    "timestamp": 1750858155316
+    "timestamp": 1750860047508
   },
   {
     "type": "input",
@@ -310,7 +310,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#age > input"
     },
-    "timestamp": 1750858155752
+    "timestamp": 1750860048982
   },
   {
     "type": "click",
@@ -324,7 +324,7 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858157787
+    "timestamp": 1750860050818
   },
   {
     "type": "click",
@@ -338,7 +338,7 @@
       "type": "text",
       "selector": "div#height-ft > input"
     },
-    "timestamp": 1750858159247
+    "timestamp": 1750860053137
   },
   {
     "type": "input",
@@ -352,7 +352,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#height-ft > input"
     },
-    "timestamp": 1750858160052
+    "timestamp": 1750860054203
   },
   {
     "type": "click",
@@ -366,7 +366,7 @@
       "type": "text",
       "selector": "div#height-in > input"
     },
-    "timestamp": 1750858166120
+    "timestamp": 1750860055642
   },
   {
     "type": "input",
@@ -380,7 +380,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#height-in > input"
     },
-    "timestamp": 1750858166757
+    "timestamp": 1750860056842
   },
   {
     "type": "click",
@@ -394,7 +394,7 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858168552
+    "timestamp": 1750860058624
   },
   {
     "type": "click",
@@ -408,7 +408,7 @@
       "type": "text",
       "selector": "div#current-lbs > input"
     },
-    "timestamp": 1750858170180
+    "timestamp": 1750860060819
   },
   {
     "type": "input",
@@ -422,7 +422,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#current-lbs > input"
     },
-    "timestamp": 1750858170870
+    "timestamp": 1750860061652
   },
   {
     "type": "input",
@@ -436,7 +436,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#current-lbs > input"
     },
-    "timestamp": 1750858171372
+    "timestamp": 1750860062291
   },
   {
     "type": "input",
@@ -450,7 +450,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#current-lbs > input"
     },
-    "timestamp": 1750858171629
+    "timestamp": 1750860062737
   },
   {
     "type": "click",
@@ -464,7 +464,7 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858172729
+    "timestamp": 1750860063952
   },
   {
     "type": "click",
@@ -478,7 +478,7 @@
       "type": "text",
       "selector": "div#target_weight_lb > input"
     },
-    "timestamp": 1750858174038
+    "timestamp": 1750860065246
   },
   {
     "type": "input",
@@ -492,7 +492,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#target_weight_lb > input"
     },
-    "timestamp": 1750858174561
+    "timestamp": 1750860066002
   },
   {
     "type": "input",
@@ -506,7 +506,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#target_weight_lb > input"
     },
-    "timestamp": 1750858174962
+    "timestamp": 1750860066744
   },
   {
     "type": "input",
@@ -520,7 +520,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#target_weight_lb > input"
     },
-    "timestamp": 1750858175222
+    "timestamp": 1750860067218
   },
   {
     "type": "click",
@@ -534,7 +534,7 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858175840
+    "timestamp": 1750860068455
   },
   {
     "type": "click",
@@ -548,7 +548,7 @@
       "type": "text",
       "selector": "div#firstName > input"
     },
-    "timestamp": 1750858176928
+    "timestamp": 1750860070274
   },
   {
     "type": "input",
@@ -562,7 +562,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#firstName > input"
     },
-    "timestamp": 1750858177573
+    "timestamp": 1750860071237
   },
   {
     "type": "input",
@@ -576,7 +576,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#firstName > input"
     },
-    "timestamp": 1750858177771
+    "timestamp": 1750860072040
   },
   {
     "type": "click",
@@ -590,7 +590,7 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858178486
+    "timestamp": 1750860074086
   },
   {
     "type": "click",
@@ -604,7 +604,7 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858181026
+    "timestamp": 1750860078116
   },
   {
     "type": "click",
@@ -618,7 +618,7 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858182908
+    "timestamp": 1750860080389
   },
   {
     "type": "click",
@@ -632,7 +632,7 @@
       "type": "",
       "selector": "div > button > div > span"
     },
-    "timestamp": 1750858184251
+    "timestamp": 1750860082030
   },
   {
     "type": "click",
@@ -646,7 +646,7 @@
       "type": "",
       "selector": "div > button > div > span"
     },
-    "timestamp": 1750858186055
+    "timestamp": 1750860084588
   },
   {
     "type": "click",
@@ -660,7 +660,7 @@
       "type": "",
       "selector": "div#diets > div > button > div > span"
     },
-    "timestamp": 1750858187533
+    "timestamp": 1750860087373
   },
   {
     "type": "click",
@@ -674,7 +674,7 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858188334
+    "timestamp": 1750860088731
   },
   {
     "type": "click",
@@ -688,21 +688,21 @@
       "type": "",
       "selector": "div > button > div > span:nth-child(2)"
     },
-    "timestamp": 1750858191708
+    "timestamp": 1750860091607
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "No",
+      "text": "Yes",
       "id": "",
       "name": "",
       "className": "label svelte-1lju9rv",
       "href": "",
       "type": "",
-      "selector": "div > button:nth-child(2) > div > span"
+      "selector": "div > button > div > span"
     },
-    "timestamp": 1750858192889
+    "timestamp": 1750860094435
   },
   {
     "type": "click",
@@ -716,7 +716,7 @@
       "type": "",
       "selector": "div#deseases > div > button > div > span"
     },
-    "timestamp": 1750858194288
+    "timestamp": 1750860096866
   },
   {
     "type": "click",
@@ -730,21 +730,21 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858195300
+    "timestamp": 1750860098189
   },
   {
     "type": "click",
     "detail": {
-      "tag": "SPAN",
+      "tag": "BUTTON",
       "text": "Continue",
       "id": "",
       "name": "",
-      "className": " svelte-kfp6vj",
+      "className": "svelte-ukzjgr loading",
       "href": "",
-      "type": "",
-      "selector": "button > span"
+      "type": "submit",
+      "selector": "button"
     },
-    "timestamp": 1750858197627
+    "timestamp": 1750860101784
   },
   {
     "type": "click",
@@ -758,7 +758,7 @@
       "type": "email",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858204950
+    "timestamp": 1750860109686
   },
   {
     "type": "input",
@@ -772,7 +772,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858205930
+    "timestamp": 1750860110614
   },
   {
     "type": "input",
@@ -786,7 +786,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858206002
+    "timestamp": 1750860110691
   },
   {
     "type": "input",
@@ -800,7 +800,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858206141
+    "timestamp": 1750860110812
   },
   {
     "type": "input",
@@ -814,7 +814,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858206217
+    "timestamp": 1750860110885
   },
   {
     "type": "input",
@@ -828,7 +828,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858206450
+    "timestamp": 1750860111105
   },
   {
     "type": "input",
@@ -842,7 +842,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858206542
+    "timestamp": 1750860111191
   },
   {
     "type": "input",
@@ -856,7 +856,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858206683
+    "timestamp": 1750860111325
   },
   {
     "type": "input",
@@ -870,7 +870,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858206775
+    "timestamp": 1750860111445
   },
   {
     "type": "input",
@@ -884,7 +884,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858206874
+    "timestamp": 1750860111532
   },
   {
     "type": "input",
@@ -898,7 +898,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858207178
+    "timestamp": 1750860111973
   },
   {
     "type": "input",
@@ -912,7 +912,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858207468
+    "timestamp": 1750860112356
   },
   {
     "type": "input",
@@ -926,7 +926,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858207582
+    "timestamp": 1750860112522
   },
   {
     "type": "input",
@@ -940,7 +940,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858208050
+    "timestamp": 1750860113076
   },
   {
     "type": "input",
@@ -954,7 +954,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858208196
+    "timestamp": 1750860113511
   },
   {
     "type": "input",
@@ -968,7 +968,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858208373
+    "timestamp": 1750860113711
   },
   {
     "type": "input",
@@ -982,7 +982,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858208463
+    "timestamp": 1750860113818
   },
   {
     "type": "input",
@@ -996,7 +996,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858208643
+    "timestamp": 1750860113987
   },
   {
     "type": "input",
@@ -1010,7 +1010,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858208846
+    "timestamp": 1750860114250
   },
   {
     "type": "input",
@@ -1024,7 +1024,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858208963
+    "timestamp": 1750860114379
   },
   {
     "type": "input",
@@ -1038,7 +1038,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858209056
+    "timestamp": 1750860114472
   },
   {
     "type": "input",
@@ -1052,7 +1052,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858209241
+    "timestamp": 1750860114644
   },
   {
     "type": "input",
@@ -1066,7 +1066,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858209318
+    "timestamp": 1750860114761
   },
   {
     "type": "input",
@@ -1080,7 +1080,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858209422
+    "timestamp": 1750860114842
   },
   {
     "type": "input",
@@ -1094,7 +1094,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858209509
+    "timestamp": 1750860114956
   },
   {
     "type": "input",
@@ -1108,7 +1108,7 @@
       "className": "svelte-1rnsrkx",
       "selector": "div#email > input"
     },
-    "timestamp": 1750858209723
+    "timestamp": 1750860115125
   },
   {
     "type": "click",
@@ -1122,7 +1122,7 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858211391
+    "timestamp": 1750860117471
   },
   {
     "type": "click",
@@ -1136,7 +1136,7 @@
       "type": "",
       "selector": "button > span"
     },
-    "timestamp": 1750858213951
+    "timestamp": 1750860121680
   },
   {
     "type": "click",
@@ -1150,7 +1150,7 @@
       "type": "",
       "selector": "div#el_2mDaS > button > span"
     },
-    "timestamp": 1750858216398
+    "timestamp": 1750860125213
   },
   {
     "type": "click",
@@ -1164,17 +1164,6 @@
       "type": "submit",
       "selector": "button#primer-submit-button"
     },
-    "timestamp": 1750858219904
-  }
-] "tag": "BUTTON",
-      "text": "Pay",
-      "id": "primer-submit-button",
-      "name": "",
-      "className": "pipe-btn",
-      "href": "",
-      "type": "submit",
-      "selector": "button#primer-submit-button"
-    },
-    "timestamp": 1750857926132
+    "timestamp": 1750860128975
   }
 ]

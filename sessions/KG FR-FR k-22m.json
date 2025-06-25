@@ -2,7 +2,7 @@
   {
     "type": "navigate",
     "href": "https://v3.ketogo.app/fr-fr/k-22m-eur",
-    "timestamp": 1750854636156
+    "timestamp": 1750858915370
   },
   {
     "type": "click",
@@ -16,7 +16,7 @@
       "type": "submit",
       "selector": "body:nth-child(2) > div > div:nth-child(3) > div > form > div > div:nth-child(3) > button:nth-child(2)"
     },
-    "timestamp": 1750854642283
+    "timestamp": 1750858918810
   },
   {
     "type": "click",
@@ -30,7 +30,7 @@
       "type": "submit",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button:nth-child(2)"
     },
-    "timestamp": 1750854645177
+    "timestamp": 1750858920551
   },
   {
     "type": "click",
@@ -44,21 +44,21 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span"
     },
-    "timestamp": 1750854646824
+    "timestamp": 1750858922365
   },
   {
     "type": "click",
     "detail": {
-      "tag": "BUTTON",
-      "text": "Je l’ai essayé",
+      "tag": "SPAN",
+      "text": "Jamais entendu parler",
       "id": "",
       "name": "",
-      "className": "transition pipe-option-btn pipe-option-btn-selected",
+      "className": "",
       "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button:nth-child(3) > span"
     },
-    "timestamp": 1750854648597
+    "timestamp": 1750858923605
   },
   {
     "type": "click",
@@ -72,7 +72,7 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(4) > div:nth-child(3) > a > button > span > span"
     },
-    "timestamp": 1750854650527
+    "timestamp": 1750858924909
   },
   {
     "type": "click",
@@ -86,7 +86,7 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label"
     },
-    "timestamp": 1750854653888
+    "timestamp": 1750858926141
   },
   {
     "type": "click",
@@ -100,7 +100,7 @@
       "type": "checkbox",
       "selector": "input#whenFeelHungry-whenFeelHungry.answer_1"
     },
-    "timestamp": 1750854653890
+    "timestamp": 1750858926142
   },
   {
     "type": "input",
@@ -114,21 +114,21 @@
       "className": "pipe-option-btn-checkbox-input",
       "selector": "input#whenFeelHungry-whenFeelHungry.answer_1"
     },
-    "timestamp": 1750854653891
+    "timestamp": 1750858926143
   },
   {
     "type": "click",
     "detail": {
-      "tag": "BUTTON",
+      "tag": "SPAN",
       "text": "Suivant",
       "id": "",
       "name": "",
-      "className": "pipe-btn ",
+      "className": "",
       "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button"
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span > span"
     },
-    "timestamp": 1750854654627
+    "timestamp": 1750858927414
   },
   {
     "type": "click",
@@ -142,7 +142,7 @@
       "type": "submit",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
     },
-    "timestamp": 1750854656945
+    "timestamp": 1750858928645
   },
   {
     "type": "click",
@@ -156,133 +156,7 @@
       "type": "submit",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
     },
-    "timestamp": 1750854658642
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "Continuer",
-      "id": "",
-      "name": "",
-      "className": "pipe-btn pipe-btn-outlined",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > a > button"
-    },
-    "timestamp": 1750854660460
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "heightCm",
-      "value": "1",
-      "checked": false,
-      "tag": "input",
-      "type": "text",
-      "id": "heightCm",
-      "className": "pipe-input",
-      "selector": "input#heightCm"
-    },
-    "timestamp": 1750854662092
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "heightCm",
-      "value": "18",
-      "checked": false,
-      "tag": "input",
-      "type": "text",
-      "id": "heightCm",
-      "className": "pipe-input",
-      "selector": "input#heightCm"
-    },
-    "timestamp": 1750854662472
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "heightCm",
-      "value": "187",
-      "checked": false,
-      "tag": "input",
-      "type": "text",
-      "id": "heightCm",
-      "className": "pipe-input",
-      "selector": "input#heightCm"
-    },
-    "timestamp": 1750854662635
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "Continuer",
-      "id": "",
-      "name": "",
-      "className": "pipe-btn ",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(3) > button"
-    },
-    "timestamp": 1750854663104
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "weightKg",
-      "value": "8",
-      "checked": false,
-      "tag": "input",
-      "type": "text",
-      "id": "weightKg",
-      "className": "pipe-input",
-      "selector": "input#weightKg"
-    },
-    "timestamp": 1750854664490
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "weightKg",
-      "value": "80",
-      "checked": false,
-      "tag": "input",
-      "type": "text",
-      "id": "weightKg",
-      "className": "pipe-input",
-      "selector": "input#weightKg"
-    },
-    "timestamp": 1750854664680
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Continuer",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(8) > button > span > span"
-    },
-    "timestamp": 1750854665747
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Continuer",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(9) > button > span > span"
-    },
-    "timestamp": 1750854667161
+    "timestamp": 1750858929886
   },
   {
     "type": "click",
@@ -296,973 +170,49 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > a > button > span > span"
     },
-    "timestamp": 1750854668832
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "INPUT",
-      "text": "",
-      "id": "firstName",
-      "name": "firstName",
-      "className": "pipe-input",
-      "href": "",
-      "type": "text",
-      "selector": "input#firstName"
-    },
-    "timestamp": 1750854669973
+    "timestamp": 1750858931385
   },
   {
     "type": "input",
     "detail": {
-      "name": "firstName",
-      "value": "k",
+      "name": "heightCm",
+      "value": "1",
       "checked": false,
       "tag": "input",
       "type": "text",
-      "id": "firstName",
+      "id": "heightCm",
       "className": "pipe-input",
-      "selector": "input#firstName"
+      "selector": "input#heightCm"
     },
-    "timestamp": 1750854670973
+    "timestamp": 1750858933193
   },
   {
     "type": "input",
     "detail": {
-      "name": "firstName",
-      "value": "kg",
+      "name": "heightCm",
+      "value": "18",
       "checked": false,
       "tag": "input",
       "type": "text",
-      "id": "firstName",
+      "id": "heightCm",
       "className": "pipe-input",
-      "selector": "input#firstName"
+      "selector": "input#heightCm"
     },
-    "timestamp": 1750854671278
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Suivant",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button > span > span"
-    },
-    "timestamp": 1750854672376
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Continuer",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(3) > div:nth-child(3) > button > span > span"
-    },
-    "timestamp": 1750854673483
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Peu ou pas du tout d'exercice",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button > span:nth-child(2)"
-    },
-    "timestamp": 1750854674893
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "Moins d'un an",
-      "id": "",
-      "name": "",
-      "className": "transition pipe-option-btn pipe-option-btn-selected",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
-    },
-    "timestamp": 1750854676472
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "XXXL+",
-      "id": "",
-      "name": "",
-      "className": "transition pipe-option-btn pipe-option-btn-selected",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
-    },
-    "timestamp": 1750854678463
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "XXXL+",
-      "id": "",
-      "name": "",
-      "className": "transition pipe-option-btn pipe-option-btn-selected",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
-    },
-    "timestamp": 1750854679859
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Continuer",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(7) > a > button > span > span"
-    },
-    "timestamp": 1750854681949
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Je mange la même nourriture presque tous les jours",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button > span"
-    },
-    "timestamp": 1750854683989
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Continuer",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > a > button > span"
-    },
-    "timestamp": 1750854685893
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "LABEL",
-      "text": "Avocat",
-      "id": "",
-      "name": "",
-      "className": "pipe-option-btn-container mb-3",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label"
-    },
-    "timestamp": 1750854687537
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "INPUT",
-      "text": "",
-      "id": "favIngredients-avocado",
-      "name": "favIngredients",
-      "className": "pipe-option-btn-checkbox-input",
-      "href": "",
-      "type": "checkbox",
-      "selector": "input#favIngredients-avocado"
-    },
-    "timestamp": 1750854687538
+    "timestamp": 1750858933560
   },
   {
     "type": "input",
     "detail": {
-      "name": "favIngredients",
-      "value": "avocado",
-      "checked": true,
-      "tag": "input",
-      "type": "checkbox",
-      "id": "favIngredients-avocado",
-      "className": "pipe-option-btn-checkbox-input",
-      "selector": "input#favIngredients-avocado"
-    },
-    "timestamp": 1750854687538
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Suivant",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span > span"
-    },
-    "timestamp": 1750854688888
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "LABEL",
-      "text": "Je mange de tout",
-      "id": "",
-      "name": "",
-      "className": "pipe-option-btn-container mb-3",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div > label"
-    },
-    "timestamp": 1750854691205
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "INPUT",
-      "text": "",
-      "id": "preferredProtein-all",
-      "name": "preferredProtein",
-      "className": "pipe-option-btn-checkbox-input",
-      "href": "",
-      "type": "checkbox",
-      "selector": "input#preferredProtein-all"
-    },
-    "timestamp": 1750854691206
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "preferredProtein",
-      "value": "all",
-      "checked": true,
-      "tag": "input",
-      "type": "checkbox",
-      "id": "preferredProtein-all",
-      "className": "pipe-option-btn-checkbox-input",
-      "selector": "input#preferredProtein-all"
-    },
-    "timestamp": 1750854691206
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Suivant",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button > span > span"
-    },
-    "timestamp": 1750854692638
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "LABEL",
-      "text": "Aucun",
-      "id": "",
-      "name": "",
-      "className": "pipe-option-btn-container mb-3",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div > label"
-    },
-    "timestamp": 1750854693840
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "INPUT",
-      "text": "",
-      "id": "foodAllergies-foodAllergies.answer_1",
-      "name": "foodAllergies",
-      "className": "pipe-option-btn-checkbox-input",
-      "href": "",
-      "type": "checkbox",
-      "selector": "input#foodAllergies-foodAllergies.answer_1"
-    },
-    "timestamp": 1750854693841
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "foodAllergies",
-      "value": "foodAllergies.answer_1",
-      "checked": true,
-      "tag": "input",
-      "type": "checkbox",
-      "id": "foodAllergies-foodAllergies.answer_1",
-      "className": "pipe-option-btn-checkbox-input",
-      "selector": "input#foodAllergies-foodAllergies.answer_1"
-    },
-    "timestamp": 1750854693841
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Suivant",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button > span > span"
-    },
-    "timestamp": 1750854694756
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Continuer",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a > button > span > span"
-    },
-    "timestamp": 1750854696459
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "Plus de 8 heures",
-      "id": "",
-      "name": "",
-      "className": "transition pipe-option-btn pipe-option-btn-selected",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
-    },
-    "timestamp": 1750854698047
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "1 verre ou moins",
-      "id": "",
-      "name": "",
-      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
-    },
-    "timestamp": 1750854699997
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "BUTTON",
-      "text": "Travail de 9 h à 17 h",
-      "id": "",
-      "name": "",
-      "className": "transition pipe-option-btn pipe-option-btn-selected",
-      "href": "",
-      "type": "submit",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
-    },
-    "timestamp": 1750854701882
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Essentiellement sédentaire (peu de marche et de station debout)",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button > span"
-    },
-    "timestamp": 1750854703843
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "LABEL",
-      "text": "Antibiotiques",
-      "id": "",
-      "name": "",
-      "className": "pipe-option-btn-container mb-3",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label"
-    },
-    "timestamp": 1750854705653
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "INPUT",
-      "text": "",
-      "id": "medication-medication.answer_1",
-      "name": "medication",
-      "className": "pipe-option-btn-checkbox-input",
-      "href": "",
-      "type": "checkbox",
-      "selector": "input#medication-medication.answer_1"
-    },
-    "timestamp": 1750854705655
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "medication",
-      "value": "medication.answer_1",
-      "checked": true,
-      "tag": "input",
-      "type": "checkbox",
-      "id": "medication-medication.answer_1",
-      "className": "pipe-option-btn-checkbox-input",
-      "selector": "input#medication-medication.answer_1"
-    },
-    "timestamp": 1750854705655
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Suivant",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span > span"
-    },
-    "timestamp": 1750854707090
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Diabète (n'importe quel stade)",
-      "id": "",
-      "name": "",
-      "className": "pipe-option-btn-label",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label > div:nth-child(2) > span:nth-child(2)"
-    },
-    "timestamp": 1750854708663
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "INPUT",
-      "text": "",
-      "id": "diseases-diseases.answer_1",
-      "name": "diseases",
-      "className": "pipe-option-btn-checkbox-input",
-      "href": "",
-      "type": "checkbox",
-      "selector": "input#diseases-diseases.answer_1"
-    },
-    "timestamp": 1750854708664
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "diseases",
-      "value": "diseases.answer_1",
-      "checked": true,
-      "tag": "input",
-      "type": "checkbox",
-      "id": "diseases-diseases.answer_1",
-      "className": "pipe-option-btn-checkbox-input",
-      "selector": "input#diseases-diseases.answer_1"
-    },
-    "timestamp": 1750854708664
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Suivant",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span > span"
-    },
-    "timestamp": 1750854710204
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "LABEL",
-      "text": "Courir sur 5 km",
-      "id": "",
-      "name": "",
-      "className": "pipe-option-btn-container mb-3",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label"
-    },
-    "timestamp": 1750854712678
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "INPUT",
-      "text": "",
-      "id": "additionalGoal-additionalGoal.answer_1",
-      "name": "additionalGoal",
-      "className": "pipe-option-btn-checkbox-input",
-      "href": "",
-      "type": "checkbox",
-      "selector": "input#additionalGoal-additionalGoal.answer_1"
-    },
-    "timestamp": 1750854712680
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "additionalGoal",
-      "value": "additionalGoal.answer_1",
-      "checked": true,
-      "tag": "input",
-      "type": "checkbox",
-      "id": "additionalGoal-additionalGoal.answer_1",
-      "className": "pipe-option-btn-checkbox-input",
-      "selector": "input#additionalGoal-additionalGoal.answer_1"
-    },
-    "timestamp": 1750854712680
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Suivant",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span > span"
-    },
-    "timestamp": 1750854714962
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Continuer",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a > button > span > span"
-    },
-    "timestamp": 1750854717748
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "SPAN",
-      "text": "Continuer",
-      "id": "",
-      "name": "",
-      "className": "",
-      "href": "",
-      "type": "",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(3) > div:nth-child(3) > button > span > span"
-    },
-    "timestamp": 1750854719768
-  },
-  {
-    "type": "click",
-    "detail": {
-      "tag": "INPUT",
-      "text": "",
-      "id": "email",
-      "name": "email",
-      "className": "pipe-input",
-      "href": "",
-      "type": "email",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854733336
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "k",
+      "name": "heightCm",
+      "value": "187",
       "checked": false,
       "tag": "input",
-      "type": "email",
-      "id": "email",
+      "type": "text",
+      "id": "heightCm",
       "className": "pipe-input",
-      "selector": "input#email"
+      "selector": "input#heightCm"
     },
-    "timestamp": 1750854734752
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kr",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854734836
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kri",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854734945
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kris",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854735037
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "krist",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854735235
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristi",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854735336
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristia",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854735472
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristian",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854735578
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854735644
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854735991
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+n",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854736283
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854736383
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt@",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854736886
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt@n",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854737065
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt@nu",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854737261
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt@nut",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854737379
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt@nutr",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854737562
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt@nutra",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854737846
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt@nutram",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854738148
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt@nutrame",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854738207
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt@nutrameg",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854738382
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt@nutrameg.",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854738501
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt@nutrameg.c",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854738576
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt@nutrameg.co",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854738704
-  },
-  {
-    "type": "input",
-    "detail": {
-      "name": "email",
-      "value": "kristians+nt@nutrameg.com",
-      "checked": false,
-      "tag": "input",
-      "type": "email",
-      "id": "email",
-      "className": "pipe-input",
-      "selector": "input#email"
-    },
-    "timestamp": 1750854738869
+    "timestamp": 1750858933759
   },
   {
     "type": "click",
@@ -1276,37 +226,1001 @@
       "type": "",
       "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(3) > button > span > span"
     },
-    "timestamp": 1750854740464
+    "timestamp": 1750858934443
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "weightKg",
+      "value": "8",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "weightKg",
+      "className": "pipe-input",
+      "selector": "input#weightKg"
+    },
+    "timestamp": 1750858935469
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "weightKg",
+      "value": "80",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "weightKg",
+      "className": "pipe-input",
+      "selector": "input#weightKg"
+    },
+    "timestamp": 1750858935674
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Obtenir mon programme",
+      "text": "Continuer",
       "id": "",
       "name": "",
       "className": "",
       "href": "",
       "type": "",
-      "selector": "div#stickyTrigger > button > span > span"
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(8) > button > span > span"
     },
-    "timestamp": 1750854743383
+    "timestamp": 1750858936254
   },
   {
     "type": "click",
     "detail": {
       "tag": "SPAN",
-      "text": "Paie de façon sécurisée",
+      "text": "Continuer",
       "id": "",
       "name": "",
-      "className": "submit-button-text",
+      "className": "",
       "href": "",
       "type": "",
-      "selector": "button#submit-button > span"
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(9) > button > span > span"
     },
-    "timestamp": 1750854747238
-  }
-]143
+    "timestamp": 1750858937353
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continuer",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > a > button > span > span"
+    },
+    "timestamp": 1750858939610
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "firstName",
+      "value": "k",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "firstName",
+      "className": "pipe-input",
+      "selector": "input#firstName"
+    },
+    "timestamp": 1750858941315
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "firstName",
+      "value": "kg",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "firstName",
+      "className": "pipe-input",
+      "selector": "input#firstName"
+    },
+    "timestamp": 1750858941408
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Suivant",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750858941792
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continuer",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(3) > div:nth-child(3) > button > span > span"
+    },
+    "timestamp": 1750858943130
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Peu ou pas du tout d'exercice",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button > span:nth-child(2)"
+    },
+    "timestamp": 1750858944529
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Moins d'un an",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
+    },
+    "timestamp": 1750858945974
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "XXXL+",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
+    },
+    "timestamp": 1750858947427
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "XXXL",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button:nth-child(2)"
+    },
+    "timestamp": 1750858948658
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continuer",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(7) > a > button > span > span"
+    },
+    "timestamp": 1750858949879
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Je ne suis pas sûr",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button:nth-child(5)"
+    },
+    "timestamp": 1750858951127
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continuer",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div > div:nth-child(2) > a > button > span > span"
+    },
+    "timestamp": 1750858953116
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Avocat",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label"
+    },
+    "timestamp": 1750858954438
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "favIngredients-avocado",
+      "name": "favIngredients",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#favIngredients-avocado"
+    },
+    "timestamp": 1750858954440
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "favIngredients",
+      "value": "avocado",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "favIngredients-avocado",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#favIngredients-avocado"
+    },
+    "timestamp": 1750858954440
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Suivant",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750858955165
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Je mange de tout",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div > label"
+    },
+    "timestamp": 1750858956586
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "preferredProtein-all",
+      "name": "preferredProtein",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#preferredProtein-all"
+    },
+    "timestamp": 1750858956587
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "preferredProtein",
+      "value": "all",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "preferredProtein-all",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#preferredProtein-all"
+    },
+    "timestamp": 1750858956587
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Suivant",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750858957795
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Aucun",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div > label"
+    },
+    "timestamp": 1750858959396
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "foodAllergies-foodAllergies.answer_1",
+      "name": "foodAllergies",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#foodAllergies-foodAllergies.answer_1"
+    },
+    "timestamp": 1750858959398
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "foodAllergies",
+      "value": "foodAllergies.answer_1",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "foodAllergies-foodAllergies.answer_1",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#foodAllergies-foodAllergies.answer_1"
+    },
+    "timestamp": 1750858959398
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Suivant",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(5) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750858960715
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continuer",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a > button > span > span"
+    },
+    "timestamp": 1750858962389
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Plus de 8 heures",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button > span"
+    },
+    "timestamp": 1750858965017
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "1 verre ou moins",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn mb-4 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
+    },
+    "timestamp": 1750858966831
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Travail de 9 h à 17 h",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-option-btn pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button"
+    },
+    "timestamp": 1750858968591
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Essentiellement sédentaire (peu de marche et de station debout)",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > button > span"
+    },
+    "timestamp": 1750858970806
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Antibiotiques",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label"
+    },
+    "timestamp": 1750858972122
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "medication-medication.answer_1",
+      "name": "medication",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#medication-medication.answer_1"
+    },
+    "timestamp": 1750858972123
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "medication",
+      "value": "medication.answer_1",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "medication-medication.answer_1",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#medication-medication.answer_1"
+    },
+    "timestamp": 1750858972123
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Suivant",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn ",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button"
+    },
+    "timestamp": 1750858973337
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Diabète (n'importe quel stade)",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-label",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label > div:nth-child(2) > span:nth-child(2)"
+    },
+    "timestamp": 1750858975058
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "diseases-diseases.answer_1",
+      "name": "diseases",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#diseases-diseases.answer_1"
+    },
+    "timestamp": 1750858975059
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "diseases",
+      "value": "diseases.answer_1",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "diseases-diseases.answer_1",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#diseases-diseases.answer_1"
+    },
+    "timestamp": 1750858975059
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Suivant",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750858976292
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Courir sur 5 km",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-btn-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div > label"
+    },
+    "timestamp": 1750858977585
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "additionalGoal-additionalGoal.answer_1",
+      "name": "additionalGoal",
+      "className": "pipe-option-btn-checkbox-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#additionalGoal-additionalGoal.answer_1"
+    },
+    "timestamp": 1750858977586
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "additionalGoal",
+      "value": "additionalGoal.answer_1",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "additionalGoal-additionalGoal.answer_1",
+      "className": "pipe-option-btn-checkbox-input",
+      "selector": "input#additionalGoal-additionalGoal.answer_1"
+    },
+    "timestamp": 1750858977586
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Suivant",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1750858978770
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continuer",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > div:nth-child(2) > a > button > span > span"
+    },
+    "timestamp": 1750858980626
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continuer",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(3) > div:nth-child(3) > button > span > span"
+    },
+    "timestamp": 1750858982481
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "k",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858996520
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kr",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858996610
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kri",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858996737
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kris",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858996821
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "krist",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858997059
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristi",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858997157
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristia",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858997279
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristian",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858997401
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858997481
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858998052
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+n",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858998353
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858998450
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858998915
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@n",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858999086
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nu",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858999277
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nut",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858999373
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutr",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858999539
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutra",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858999763
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutram",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858999870
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrame",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750858999977
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750859000148
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750859000224
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.c",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750859000340
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.co",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1750859000445
   },
   {
     "type": "input",
@@ -1320,21 +1234,21 @@
       "className": "pipe-input",
       "selector": "input#email"
     },
-    "timestamp": 1750854309359
+    "timestamp": 1750859000624
   },
   {
     "type": "click",
     "detail": {
-      "tag": "BUTTON",
-      "text": "",
+      "tag": "SPAN",
+      "text": "Continuer",
       "id": "",
       "name": "",
-      "className": "pipe-btn ",
+      "className": "",
       "href": "",
-      "type": "button",
-      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(3) > button"
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(3) > form:nth-child(4) > div:nth-child(3) > button > span > span"
     },
-    "timestamp": 1750854310966
+    "timestamp": 1750859002205
   },
   {
     "type": "click",
@@ -1348,7 +1262,7 @@
       "type": "",
       "selector": "div#stickyTrigger > button > span > span"
     },
-    "timestamp": 1750854314210
+    "timestamp": 1750859005173
   },
   {
     "type": "click",
@@ -1362,6 +1276,6 @@
       "type": "",
       "selector": "button#submit-button > span"
     },
-    "timestamp": 1750854317733
+    "timestamp": 1750859010619
   }
-]
+] 
