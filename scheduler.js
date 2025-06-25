@@ -21,7 +21,7 @@ function error(...args) {
 
 // Run a test
 function runTest(testName) {
-    if (activeProcesses.size >= 3) {
+    if (activeProcesses.size >= 2) {
         log(`⏳ Queuing test "${testName}" (limit reached)`);
         queue.push(testName);
         return;

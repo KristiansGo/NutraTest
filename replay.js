@@ -12,7 +12,7 @@ if (!testName) {
   process.exit(1);
 }
 
-const discordWebhook = process.env.DISCORD_WEBHOOK || 'YOUR_DISCORD_WEBHOOK_URL';
+const discordWebhook = 'https://discord.com/api/webhooks/1384555272164479107/DGJKcvptzPkAoh2VDlKB1mjVVZ0WE7WQQwOnC7Gl47c8-tDgPkWcL0cmu547dWagIQ2a';
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
