@@ -1,0 +1,1505 @@
+[
+  {
+    "type": "navigate",
+    "href": "https://v3.youthgenom.com/us-en/g1-22m-usd",
+    "timestamp": 1751035666621
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Look and feel better",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn transition pipe-btn mb-4 w-full landing-btn landing-b-btn",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(2) > div > form > div > div:nth-child(3) > div > button"
+    },
+    "timestamp": 1751035670483
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "1-3 years",
+      "id": "",
+      "name": "",
+      "className": "transition pipe-btn pipe-option-btn mb-3 pipe-option-btn-selected",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(3) > div > button:nth-child(2)"
+    },
+    "timestamp": 1751035672444
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Feel better",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-control-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(3) > div > label:nth-child(3)"
+    },
+    "timestamp": 1751035674762
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "whyLoseWeight-whyLoseWeight.answer_3",
+      "name": "whyLoseWeight",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#whyLoseWeight-whyLoseWeight.answer_3"
+    },
+    "timestamp": 1751035674763
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "whyLoseWeight",
+      "value": "whyLoseWeight.answer_3",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "whyLoseWeight-whyLoseWeight.answer_3",
+      "className": "pipe-option-control-input",
+      "selector": "input#whyLoseWeight-whyLoseWeight.answer_3"
+    },
+    "timestamp": 1751035674763
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn ",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(3) > div:nth-child(2) > button"
+    },
+    "timestamp": 1751035675766
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "I am a vegetarian",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(3) > div > label:nth-child(3) > div:nth-child(2) > div:nth-child(2) > span"
+    },
+    "timestamp": 1751035677615
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "defineYourDiet-defineYourDiet.answer_3",
+      "name": "defineYourDiet",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#defineYourDiet-defineYourDiet.answer_3"
+    },
+    "timestamp": 1751035677616
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "defineYourDiet",
+      "value": "defineYourDiet.answer_3",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "defineYourDiet-defineYourDiet.answer_3",
+      "className": "pipe-option-control-input",
+      "selector": "input#defineYourDiet-defineYourDiet.answer_3"
+    },
+    "timestamp": 1751035677616
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(3) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1751035679392
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "I don’t have food allergies",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(3) > div > label > div:nth-child(2) > div:nth-child(2) > span"
+    },
+    "timestamp": 1751035680954
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "foodAllergies-foodAllergies.answer_1",
+      "name": "foodAllergies",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#foodAllergies-foodAllergies.answer_1"
+    },
+    "timestamp": 1751035680955
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "foodAllergies",
+      "value": "foodAllergies.answer_1",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "foodAllergies-foodAllergies.answer_1",
+      "className": "pipe-option-control-input",
+      "selector": "input#foodAllergies-foodAllergies.answer_1"
+    },
+    "timestamp": 1751035680955
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(3) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1751035682440
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > a > button > span"
+    },
+    "timestamp": 1751035684095
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "I’m in perimenopause",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div > label:nth-child(2) > div:nth-child(2) > div:nth-child(2) > span"
+    },
+    "timestamp": 1751035685958
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "menopause-menopause.answer_1",
+      "name": "menopause",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "radio",
+      "selector": "input#menopause-menopause.answer_1"
+    },
+    "timestamp": 1751035685959
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "menopause",
+      "value": "menopause.answer_1",
+      "checked": true,
+      "tag": "input",
+      "type": "radio",
+      "id": "menopause-menopause.answer_1",
+      "className": "pipe-option-control-input",
+      "selector": "input#menopause-menopause.answer_1"
+    },
+    "timestamp": 1751035685959
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Not at all",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-control-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div > label:nth-child(8)"
+    },
+    "timestamp": 1751035687364
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "physicallyActive-physicallyActive.answer_1",
+      "name": "physicallyActive",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "radio",
+      "selector": "input#physicallyActive-physicallyActive.answer_1"
+    },
+    "timestamp": 1751035687365
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "physicallyActive",
+      "value": "physicallyActive.answer_1",
+      "checked": true,
+      "tag": "input",
+      "type": "radio",
+      "id": "physicallyActive-physicallyActive.answer_1",
+      "className": "pipe-option-control-input",
+      "selector": "input#physicallyActive-physicallyActive.answer_1"
+    },
+    "timestamp": 1751035687365
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn ",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div:nth-child(2) > button"
+    },
+    "timestamp": 1751035688647
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "I often drink soda",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-control-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div:nth-child(2) > label"
+    },
+    "timestamp": 1751035690197
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "applyToYou-applyToYou.answer_1",
+      "name": "applyToYou",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#applyToYou-applyToYou.answer_1"
+    },
+    "timestamp": 1751035690198
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "applyToYou",
+      "value": "applyToYou.answer_1",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "applyToYou-applyToYou.answer_1",
+      "className": "pipe-option-control-input",
+      "selector": "input#applyToYou-applyToYou.answer_1"
+    },
+    "timestamp": 1751035690198
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn ",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div:nth-child(3) > button"
+    },
+    "timestamp": 1751035692040
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn ",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > a > button"
+    },
+    "timestamp": 1751035694088
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Boredom",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-control-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(3) > div > label:nth-child(3)"
+    },
+    "timestamp": 1751035695755
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "snackingTriggers-snackingTriggers.answer_3",
+      "name": "snackingTriggers",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#snackingTriggers-snackingTriggers.answer_3"
+    },
+    "timestamp": 1751035695756
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "snackingTriggers",
+      "value": "snackingTriggers.answer_3",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "snackingTriggers-snackingTriggers.answer_3",
+      "className": "pipe-option-control-input",
+      "selector": "input#snackingTriggers-snackingTriggers.answer_3"
+    },
+    "timestamp": 1751035695756
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn ",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(3) > div:nth-child(2) > button"
+    },
+    "timestamp": 1751035697019
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Diabetes (any stage)",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div > label:nth-child(2) > div:nth-child(2) > div:nth-child(2) > span"
+    },
+    "timestamp": 1751035698171
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "diseases-diseases.answer_1",
+      "name": "diseases",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#diseases-diseases.answer_1"
+    },
+    "timestamp": 1751035698171
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "diseases",
+      "value": "diseases.answer_1",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "diseases-diseases.answer_1",
+      "className": "pipe-option-control-input",
+      "selector": "input#diseases-diseases.answer_1"
+    },
+    "timestamp": 1751035698171
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1751035699893
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "3-5 times a week",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div > label:nth-child(3) > div:nth-child(2) > div:nth-child(2) > span"
+    },
+    "timestamp": 1751035701783
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "mood-mood.answer_2",
+      "name": "mood",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "radio",
+      "selector": "input#mood-mood.answer_2"
+    },
+    "timestamp": 1751035701784
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "mood",
+      "value": "mood.answer_2",
+      "checked": true,
+      "tag": "input",
+      "type": "radio",
+      "id": "mood-mood.answer_2",
+      "className": "pipe-option-control-input",
+      "selector": "input#mood-mood.answer_2"
+    },
+    "timestamp": 1751035701784
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "Night job",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-control-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div > label:nth-child(8)"
+    },
+    "timestamp": 1751035702970
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "howBusy-howBusy.answer_2",
+      "name": "howBusy",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "radio",
+      "selector": "input#howBusy-howBusy.answer_2"
+    },
+    "timestamp": 1751035702971
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "howBusy",
+      "value": "howBusy.answer_2",
+      "checked": true,
+      "tag": "input",
+      "type": "radio",
+      "id": "howBusy-howBusy.answer_2",
+      "className": "pipe-option-control-input",
+      "selector": "input#howBusy-howBusy.answer_2"
+    },
+    "timestamp": 1751035702971
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Not too many ingredients",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div > label:nth-child(13) > div:nth-child(2) > div:nth-child(2) > span"
+    },
+    "timestamp": 1751035704416
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "mealPrep-mealPrep.answer_2",
+      "name": "mealPrep",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#mealPrep-mealPrep.answer_2"
+    },
+    "timestamp": 1751035704418
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "mealPrep",
+      "value": "mealPrep.answer_2",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "mealPrep-mealPrep.answer_2",
+      "className": "pipe-option-control-input",
+      "selector": "input#mealPrep-mealPrep.answer_2"
+    },
+    "timestamp": 1751035704418
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1751035706186
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "age",
+      "value": "2",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "age",
+      "className": "pipe-input",
+      "selector": "input#age"
+    },
+    "timestamp": 1751035708686
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "age",
+      "value": "27",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "age",
+      "className": "pipe-input",
+      "selector": "input#age"
+    },
+    "timestamp": 1751035709382
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1751035710370
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > a > button > span > span"
+    },
+    "timestamp": 1751035712266
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "heightFt",
+      "value": "6",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "heightFt",
+      "className": "pipe-input",
+      "selector": "input#heightFt"
+    },
+    "timestamp": 1751035713521
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "heightIn",
+      "value": "1",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "heightIn",
+      "className": "pipe-input",
+      "selector": "input#heightIn"
+    },
+    "timestamp": 1751035714379
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1751035715539
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "weightLbs",
+      "value": "1",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "weightLbs",
+      "className": "pipe-input",
+      "selector": "input#weightLbs"
+    },
+    "timestamp": 1751035716863
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "weightLbs",
+      "value": "18",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "weightLbs",
+      "className": "pipe-input",
+      "selector": "input#weightLbs"
+    },
+    "timestamp": 1751035717517
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "weightLbs",
+      "value": "180",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "weightLbs",
+      "className": "pipe-input",
+      "selector": "input#weightLbs"
+    },
+    "timestamp": 1751035718123
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1751035719175
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Continue",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div:nth-child(2) > button > span > span"
+    },
+    "timestamp": 1751035721056
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "firstName",
+      "value": "k",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "firstName",
+      "className": "pipe-input",
+      "selector": "input#firstName"
+    },
+    "timestamp": 1751035722514
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "firstName",
+      "value": "kg",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "firstName",
+      "className": "pipe-input",
+      "selector": "input#firstName"
+    },
+    "timestamp": 1751035723193
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn mt-10",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div:nth-child(2) > button"
+    },
+    "timestamp": 1751035723937
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(6) > a > button > span > span"
+    },
+    "timestamp": 1751035726471
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > a > button > span > span"
+    },
+    "timestamp": 1751035728904
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) > a > button > span > span"
+    },
+    "timestamp": 1751035731000
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "No",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-control-container w-1/2 ml-2",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div > div:nth-child(2) > label:nth-child(2)"
+    },
+    "timestamp": 1751035732437
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "flushesAndSweating-haveYouExperienced.no",
+      "name": "flushesAndSweating",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "radio",
+      "selector": "input#flushesAndSweating-haveYouExperienced.no"
+    },
+    "timestamp": 1751035732438
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "flushesAndSweating",
+      "value": "haveYouExperienced.no",
+      "checked": true,
+      "tag": "input",
+      "type": "radio",
+      "id": "flushesAndSweating-haveYouExperienced.no",
+      "className": "pipe-option-control-input",
+      "selector": "input#flushesAndSweating-haveYouExperienced.no"
+    },
+    "timestamp": 1751035732438
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "No",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-control-container w-1/2 ml-2",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div > div:nth-child(4) > label:nth-child(2)"
+    },
+    "timestamp": 1751035733510
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "dryerSkin-haveYouExperienced.no",
+      "name": "dryerSkin",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "radio",
+      "selector": "input#dryerSkin-haveYouExperienced.no"
+    },
+    "timestamp": 1751035733511
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "dryerSkin",
+      "value": "haveYouExperienced.no",
+      "checked": true,
+      "tag": "input",
+      "type": "radio",
+      "id": "dryerSkin-haveYouExperienced.no",
+      "className": "pipe-option-control-input",
+      "selector": "input#dryerSkin-haveYouExperienced.no"
+    },
+    "timestamp": 1751035733511
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "No",
+      "id": "",
+      "name": "",
+      "className": "pipe-option-control-container mb-3",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div > div:nth-child(6) > label:nth-child(2)"
+    },
+    "timestamp": 1751035734551
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "hormonalTherapy-haveYouExperienced.no",
+      "name": "hormonalTherapy",
+      "className": "pipe-option-control-input",
+      "href": "",
+      "type": "radio",
+      "selector": "input#hormonalTherapy-haveYouExperienced.no"
+    },
+    "timestamp": 1751035734552
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "hormonalTherapy",
+      "value": "haveYouExperienced.no",
+      "checked": true,
+      "tag": "input",
+      "type": "radio",
+      "id": "hormonalTherapy-haveYouExperienced.no",
+      "className": "pipe-option-control-input",
+      "selector": "input#hormonalTherapy-haveYouExperienced.no"
+    },
+    "timestamp": 1751035734552
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn ",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div:nth-child(2) > button"
+    },
+    "timestamp": 1751035735712
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > a > button > span > span"
+    },
+    "timestamp": 1751035738152
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > a > button > span"
+    },
+    "timestamp": 1751035739758
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "Next",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn ",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > a > button"
+    },
+    "timestamp": 1751035742232
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "k",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035745752
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kr",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035745870
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kri",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035746005
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kris",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035746095
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "krist",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035746322
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristi",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035746442
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristia",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035746573
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristian",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035746698
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035746780
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035747312
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+n",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035747711
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035747990
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035748545
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@n",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035748785
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nu",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035748981
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nut",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035749085
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutr",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035749266
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutra",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035749882
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutram",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035750033
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrame",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035750121
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035750323
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035750438
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.c",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035750556
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.co",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035750653
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "email",
+      "value": "kristians+nt@nutrameg.com",
+      "checked": false,
+      "tag": "input",
+      "type": "email",
+      "id": "email",
+      "className": "pipe-input",
+      "selector": "input#email"
+    },
+    "timestamp": 1751035750855
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "",
+      "id": "",
+      "name": "",
+      "className": "pipe-btn ",
+      "href": "",
+      "type": "submit",
+      "selector": "body:nth-child(2) > div:nth-child(4) > form:nth-child(2) > div > button:nth-child(5)"
+    },
+    "timestamp": 1751035752573
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "LABEL",
+      "text": "I agree with the T&Cs and Privacy Policy",
+      "id": "",
+      "name": "",
+      "className": "pipe-agreement-container",
+      "href": "",
+      "type": "",
+      "selector": "body:nth-child(2) > div:nth-child(5) > div:nth-child(5) > div:nth-child(2) > form:nth-child(4) > div:nth-child(5) > label"
+    },
+    "timestamp": 1751035756758
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "INPUT",
+      "text": "",
+      "id": "privacyAgreementInput",
+      "name": "privacyAgreement",
+      "className": "pipe-agreement-input",
+      "href": "",
+      "type": "checkbox",
+      "selector": "input#privacyAgreementInput"
+    },
+    "timestamp": 1751035756760
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "privacyAgreement",
+      "value": "on",
+      "checked": true,
+      "tag": "input",
+      "type": "checkbox",
+      "id": "privacyAgreementInput",
+      "className": "pipe-agreement-input",
+      "selector": "input#privacyAgreementInput"
+    },
+    "timestamp": 1751035756760
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Get my plan",
+      "id": "",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "",
+      "selector": "div#stickyTrigger > button > span > span"
+    },
+    "timestamp": 1751035759547
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "SPAN",
+      "text": "Submit secure payment",
+      "id": "",
+      "name": "",
+      "className": "submit-button-text",
+      "href": "",
+      "type": "",
+      "selector": "button#submit-button > span"
+    },
+    "timestamp": 1751035765411
+  }
+]
