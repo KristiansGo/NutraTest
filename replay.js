@@ -7,11 +7,28 @@ const FormData = require('form-data');
 const { URL } = require('url');
 require('dotenv').config();
 
-const [, , testName] = process.argv;
+const [, , testName, ...cliArgs] = process.argv;
 if (!testName) {
-  console.error('❌ Usage: node replay.js <testName>');
+  console.error('❌ Usage: node replay.js <testName> [options]');
   process.exit(1);
 }
+
+function getOption(flag, envVar, def = true) {
+  if (process.env[envVar] !== undefined) {
+    return !/^(false|0)$/i.test(process.env[envVar]);
+  }
+  if (cliArgs.includes(`--${flag}`)) return true;
+  if (cliArgs.includes(`--no-${flag}`)) return false;
+  return def;
+}
+
+const clickFallbacks = {
+  byId: getOption('id', 'FIND_AND_CLICK_BY_ID'),
+  bySelector: getOption('selector', 'FIND_AND_CLICK_BY_SELECTOR'),
+  byName: getOption('name', 'FIND_AND_CLICK_BY_NAME'),
+  byExactText: getOption('exact-text', 'FIND_AND_CLICK_BY_EXACT_TEXT'),
+  byPartialText: getOption('partial-text', 'FIND_AND_CLICK_BY_PARTIAL_TEXT')
+};
 
 const discordWebhook = 'https://discord.com/api/webhooks/1384555272164479107/DGJKcvptzPkAoh2VDlKB1mjVVZ0WE7WQQwOnC7Gl47c8-tDgPkWcL0cmu547dWagIQ2a';
 
@@ -174,11 +191,22 @@ async function findAndClick(page, detail, targetText, stepIndex, screenshotDir, 
     return true;
   }
 
-  const attempts = [
-    async () => detail.id && tryClickElementHandle(await page.$(`#${detail.id}`)),
-    async () => detail.selector && tryClickElementHandle(await page.$(detail.selector)),
-    async () => detail.name && tryClickElementHandle(await page.$(`[name="${detail.name}"]`)),
-    async () => {
+  const attempts = [];
+
+  if (clickFallbacks.byId) {
+    attempts.push(async () => detail.id && tryClickElementHandle(await page.$(`#${detail.id}`)));
+  }
+
+  if (clickFallbacks.bySelector) {
+    attempts.push(async () => detail.selector && tryClickElementHandle(await page.$(detail.selector)));
+  }
+
+  if (clickFallbacks.byName) {
+    attempts.push(async () => detail.name && tryClickElementHandle(await page.$(`[name="${detail.name}"]`)));
+  }
+
+  if (clickFallbacks.byExactText) {
+    attempts.push(async () => {
       const els = await page.$$('button, a, label, span, div');
       for (const el of els) {
         const text = await el.evaluate(e => e.innerText || e.value || '');
@@ -187,8 +215,11 @@ async function findAndClick(page, detail, targetText, stepIndex, screenshotDir, 
         }
       }
       return false;
-    },
-    async () => {
+    });
+  }
+
+  if (clickFallbacks.byPartialText) {
+    attempts.push(async () => {
       const els = await page.$$('button, a, label, span, div');
       for (const el of els) {
         const text = await el.evaluate(e => e.innerText || e.value || '');
@@ -197,8 +228,8 @@ async function findAndClick(page, detail, targetText, stepIndex, screenshotDir, 
         }
       }
       return false;
-    }
-  ];
+    });
+  }
 
   for (const attempt of attempts) {
     if (await attempt()) return true;
