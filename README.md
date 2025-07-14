@@ -25,6 +25,8 @@ periodically.
    ```
    The application listens on port `3000` by default. Set the `PORT` environment
    variable to use a different port.
+   If Puppeteer cannot locate Chrome, set `CHROME_PATH` to the full path of your
+   Chrome executable.
 
 ## Usage
 
