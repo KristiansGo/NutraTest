@@ -37,6 +37,25 @@ Recorded tests can be replayed from the main page or scheduled to run at regular
 intervals from `/schedule`. Screenshots and logs produced during replay are
 stored in the `screenshots` directory.
 
+## Click fallback configuration
+
+When replaying a session, `findAndClick` attempts several strategies to locate
+elements. Each strategy can be toggled using CLI flags or environment
+variables. This allows you to fine‑tune how aggressively the replayer searches
+for elements.
+
+| Strategy               | CLI flag             | Environment variable                |
+| ---------------------- | -------------------- | ----------------------------------- |
+| Search by `id`         | `--id` / `--no-id`   | `FIND_AND_CLICK_BY_ID`               |
+| Search by selector     | `--selector` / `--no-selector` | `FIND_AND_CLICK_BY_SELECTOR`    |
+| Search by `name`       | `--name` / `--no-name` | `FIND_AND_CLICK_BY_NAME`            |
+| Exact text match       | `--exact-text` / `--no-exact-text` | `FIND_AND_CLICK_BY_EXACT_TEXT` |
+| Partial text match     | `--partial-text` / `--no-partial-text` | `FIND_AND_CLICK_BY_PARTIAL_TEXT` |
+
+Set an environment variable to `false` (e.g. `FIND_AND_CLICK_BY_NAME=false`) or
+use the corresponding `--no-` flag to disable that step. Omitting these options
+keeps all fallbacks enabled, preserving the default behaviour.
+
 ## Directory overview
 
 - `index.js` – Express server and HTTP API
