@@ -1,0 +1,49 @@
+[
+  {
+    "type": "navigate",
+    "href": "http://localhost:3000",
+    "timestamp": 0
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "url",
+      "value": "http://example.test",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "url",
+      "className": "",
+      "selector": "input#url"
+    },
+    "timestamp": 1
+  },
+  {
+    "type": "input",
+    "detail": {
+      "name": "testName",
+      "value": "sample",
+      "checked": false,
+      "tag": "input",
+      "type": "text",
+      "id": "testName",
+      "className": "",
+      "selector": "input#testName"
+    },
+    "timestamp": 2
+  },
+  {
+    "type": "click",
+    "detail": {
+      "tag": "BUTTON",
+      "text": "▶ Start Recording",
+      "id": "submitBtn",
+      "name": "",
+      "className": "",
+      "href": "",
+      "type": "submit",
+      "selector": "button#submitBtn"
+    },
+    "timestamp": 3
+  }
+]

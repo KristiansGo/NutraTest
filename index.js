@@ -140,22 +140,57 @@ app.post('/record', async (req, res) => {
 
     await page.evaluateOnNewDocument(() => {
       const getSelector = (el) => {
-        if (!el) return '';
-        const path = [];
-        while (el.parentElement) {
-          let name = el.nodeName.toLowerCase();
-          if (el.id) {
-            name += `#${el.id}`;
-            path.unshift(name);
-            break;
+        if (!el || el.nodeType !== 1) return '';
+        const parts = [];
+        let curr = el;
+
+        while (curr && curr.nodeType === 1) {
+          let part = curr.tagName.toLowerCase();
+
+          if (curr.id) {
+            part += `#${CSS.escape(curr.id)}`;
+          } else if (curr.classList.length) {
+            part += Array.from(curr.classList)
+              .map(cls => `.${CSS.escape(cls)}`)
+              .join('');
           }
-          const siblings = Array.from(el.parentElement.children);
-          const idx = siblings.indexOf(el) + 1;
-          if (idx > 1) name += `:nth-child(${idx})`;
-          path.unshift(name);
-          el = el.parentElement;
+
+          let selector = parts.length ? `${part} > ${parts.join(' > ')}` : part;
+          if (document.querySelectorAll(selector).length === 1) {
+            return selector;
+          }
+
+          if (!curr.id) {
+            for (const attr of Array.from(curr.attributes)) {
+              if (attr.name.startsWith('data-')) {
+                const withData = `${part}[${attr.name}="${CSS.escape(attr.value)}"]`;
+                selector = parts.length ? `${withData} > ${parts.join(' > ')}` : withData;
+                if (document.querySelectorAll(selector).length === 1) {
+                  return selector;
+                }
+                break;
+              }
+            }
+          }
+
+          if (curr.parentElement) {
+            const siblings = Array.from(curr.parentElement.children).filter(e => e.tagName === curr.tagName);
+            if (siblings.length > 1) {
+              const index = siblings.indexOf(curr) + 1;
+              const withNth = `${part}:nth-of-type(${index})`;
+              selector = parts.length ? `${withNth} > ${parts.join(' > ')}` : withNth;
+              if (document.querySelectorAll(selector).length === 1) {
+                return selector;
+              }
+              part = withNth;
+            }
+          }
+
+          parts.unshift(part);
+          curr = curr.parentElement;
         }
-        return path.join(' > ');
+
+        return parts.join(' > ');
       };
 
       window.addEventListener('click', (e) => {
