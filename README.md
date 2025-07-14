@@ -47,7 +47,3 @@ stored in the `screenshots` directory.
 - `sessions/` – Stored session files
 - `screenshots/` – Images and logs from test runs
 
-## License
-
-This project is provided as‑is without any warranty. Feel free to modify it for
-your own testing workflows.
