@@ -7,7 +7,7 @@ periodically.
 
 ## Features
 
-- Record click and form input events from any URL
+- Record click events and debounced form inputs (checkboxes and radios record instantly)
 - Replay recorded tests with screenshots and optional device emulation
 - Queue and schedule tests to run automatically
 - View test status and manage recorded sessions from the browser
@@ -32,8 +32,7 @@ periodically.
 
 Open your browser to `http://localhost:3000` and follow the on‑screen
 instructions to create a new test. When recording starts, a separate browser
-window is launched and all navigation, clicks and inputs are stored in
-`/sessions/<testName>.json`.
+window is launched and all navigation, clicks and inputs are stored in `/sessions/<testName>.json`. Inputs in text fields are recorded after 300ms of inactivity, while checkboxes and radio buttons are saved immediately.
 
 Recorded tests can be replayed from the main page or scheduled to run at regular
 intervals from `/schedule`. Screenshots and logs produced during replay are
