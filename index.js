@@ -7,6 +7,10 @@ const { spawn } = require('child_process');
 const scheduler = require('./scheduler');
 const { getNextRunTime } = require('./scheduler');
 
+function sanitizeTestName(name) {
+  return path.basename(name).replace(/[^a-zA-Z0-9_-]/g, '_');
+}
+
 const app = express();
 const PORT = process.env.PORT || 3000;
 
@@ -63,7 +67,7 @@ app.get('/tests', (req, res) => {
 });
 
 app.get('/run/:testName', (req, res) => {
-  const testName = req.params.testName;
+  const testName = sanitizeTestName(req.params.testName);
   const sessionFile = path.join(sessionDir, `${testName}.json`);
   const statusFile = path.join(sessionDir, `${testName}.status.json`);
 
@@ -87,8 +91,9 @@ app.get('/run/:testName', (req, res) => {
 });
 
 app.post('/record', async (req, res) => {
-  const { url, testName, device } = req.body;
-  if (!url || !testName) return res.status(400).send('Missing URL or test name');
+  const { url, testName: rawName, device } = req.body;
+  const testName = sanitizeTestName(rawName);
+  if (!url || !rawName) return res.status(400).send('Missing URL or test name');
 
   const sessionFile = path.join(sessionDir, `${testName}.json`);
   const recordingStatusFile = path.join(sessionDir, `${testName}.recording.status.json`);
@@ -224,7 +229,7 @@ app.post('/record', async (req, res) => {
 });
 
 app.delete('/delete/:testName', (req, res) => {
-  const testName = req.params.testName;
+  const testName = sanitizeTestName(req.params.testName);
   const filesToDelete = [
     `${testName}.json`,
     `${testName}.status.json`,
@@ -248,7 +253,7 @@ app.delete('/delete/:testName', (req, res) => {
 });
 
 app.post('/schedule/:testName', (req, res) => {
-  const testName = req.params.testName;
+  const testName = sanitizeTestName(req.params.testName);
   const sessionFile = path.join(sessionDir, `${testName}.json`);
   if (!fs.existsSync(sessionFile)) {
     return res.status(404).json({ error: 'Test not found' });
@@ -261,7 +266,8 @@ app.post('/schedule/:testName', (req, res) => {
 
 
 app.delete('/schedule/:testName', (req, res) => {
-  scheduler.cancelScheduledRun(req.params.testName);
+  const testName = sanitizeTestName(req.params.testName);
+  scheduler.cancelScheduledRun(testName);
   res.json({ status: 'unscheduled' });
 });
 
@@ -275,13 +281,15 @@ app.get('/schedule/next-run', (req, res) => {
 });
 
 app.get('/status/:testName', (req, res) => {
-  const file = path.join(sessionDir, `${req.params.testName}.status.json`);
+  const testName = sanitizeTestName(req.params.testName);
+  const file = path.join(sessionDir, `${testName}.status.json`);
   if (!fs.existsSync(file)) return res.json({ status: 'unknown' });
   res.json(JSON.parse(fs.readFileSync(file, 'utf-8')));
 });
 
 app.get('/recording-status/:testName', (req, res) => {
-  const file = path.join(sessionDir, `${req.params.testName}.recording.status.json`);
+  const testName = sanitizeTestName(req.params.testName);
+  const file = path.join(sessionDir, `${testName}.recording.status.json`);
   if (!fs.existsSync(file)) return res.json({ status: 'stopped' });
   res.json(JSON.parse(fs.readFileSync(file, 'utf-8')));
 });
