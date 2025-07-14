@@ -254,15 +254,20 @@ async function findAndClick(page, detail, targetText, stepIndex, screenshotDir, 
   const screenshotDir = path.join(__dirname, 'screenshots');
   if (!fs.existsSync(screenshotDir)) fs.mkdirSync(screenshotDir);
 
-  browser = await puppeteer.launch({
+  const launchOptions = {
     headless: 'new',
-    executablePath: 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
     args: [
       '--no-sandbox',
       '--disable-setuid-sandbox',
       '--window-size=1920,1080'
     ]
-  });
+  };
+
+  if (process.env.CHROME_PATH) {
+    launchOptions.executablePath = process.env.CHROME_PATH;
+  }
+
+  browser = await puppeteer.launch(launchOptions);
 
   const page = await browser.newPage();
   await page.setViewport({ width: 1920, height: 1080 });
