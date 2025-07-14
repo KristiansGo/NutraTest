@@ -1,7 +1,12 @@
 const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
-const { setupRecorder } = require('./lib/recorderHelpers');
+const recorderHelpersPath = path.join(__dirname, 'lib', 'recorderHelpers.js');
+const recorderHelpersSource = fs
+  .readFileSync(recorderHelpersPath, 'utf-8')
+  .split('\n')
+  .filter((line) => !line.startsWith('module.exports'))
+  .join('\n');
 
 // Usage: node recorder.js <URL> <testName>
 const [, , targetUrl, testName] = process.argv;
@@ -33,7 +38,8 @@ const sessionFile = path.join(sessionDir, `${safeName}.json`);
     console.log(`📥 Recorded event: ${event.type} → ${event.detail?.text || event.detail?.value || '[no text]'}`);
   });
 
-  await page.evaluateOnNewDocument(setupRecorder, 'recordEvent');
+  const recorderScript = `${recorderHelpersSource}\nsetupRecorder('recordEvent');`;
+  await page.evaluateOnNewDocument(recorderScript);
 
   await page.goto(targetUrl, { waitUntil: 'domcontentloaded' });
   console.log(`🚀 Recording started at ${targetUrl}`);

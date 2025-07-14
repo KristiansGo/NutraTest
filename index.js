@@ -6,7 +6,12 @@ const path = require('path');
 const { spawn } = require('child_process');
 const scheduler = require('./scheduler');
 const { getNextRunTime } = require('./scheduler');
-const { setupRecorder } = require('./lib/recorderHelpers');
+const recorderHelpersPath = path.join(__dirname, 'lib', 'recorderHelpers.js');
+const recorderHelpersSource = fs
+  .readFileSync(recorderHelpersPath, 'utf-8')
+  .split('\n')
+  .filter((line) => !line.startsWith('module.exports'))
+  .join('\n');
 
 function sanitizeTestName(name) {
   return path.basename(name).replace(/[^a-zA-Z0-9 _-]/g, '_');
@@ -139,7 +144,8 @@ app.post('/record', async (req, res) => {
       console.log(`📥 Recorded event: ${event.type} → ${event.detail?.text || event.detail?.value || '[no text]'}`);
     });
 
-    await page.evaluateOnNewDocument(setupRecorder, 'pushRecordedEvent');
+    const recorderScript = `${recorderHelpersSource}\nsetupRecorder('pushRecordedEvent');`;
+    await page.evaluateOnNewDocument(recorderScript);
 
     await page.goto(url, { waitUntil: 'domcontentloaded' });
     console.log(`🟢 Recording browser launched for: ${url}`);
