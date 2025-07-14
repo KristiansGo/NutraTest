@@ -8,7 +8,7 @@ const scheduler = require('./scheduler');
 const { getNextRunTime } = require('./scheduler');
 
 function sanitizeTestName(name) {
-  return path.basename(name).replace(/[^a-zA-Z0-9_-]/g, '_');
+  return path.basename(name).replace(/[^a-zA-Z0-9 _-]/g, '_');
 }
 
 const app = express();
