@@ -6,6 +6,7 @@ const path = require('path');
 const { spawn } = require('child_process');
 const scheduler = require('./scheduler');
 const { getNextRunTime } = require('./scheduler');
+const { setupRecorder } = require('./lib/recorderHelpers');
 
 function sanitizeTestName(name) {
   return path.basename(name).replace(/[^a-zA-Z0-9 _-]/g, '_');
@@ -138,63 +139,7 @@ app.post('/record', async (req, res) => {
       console.log(`📥 Recorded event: ${event.type} → ${event.detail?.text || event.detail?.value || '[no text]'}`);
     });
 
-    await page.evaluateOnNewDocument(() => {
-      const getSelector = (el) => {
-        if (!el) return '';
-        const path = [];
-        while (el.parentElement) {
-          let name = el.nodeName.toLowerCase();
-          if (el.id) {
-            name += `#${el.id}`;
-            path.unshift(name);
-            break;
-          }
-          const siblings = Array.from(el.parentElement.children);
-          const idx = siblings.indexOf(el) + 1;
-          if (idx > 1) name += `:nth-child(${idx})`;
-          path.unshift(name);
-          el = el.parentElement;
-        }
-        return path.join(' > ');
-      };
-
-      window.addEventListener('click', (e) => {
-        const el = e.target.closest('button, a, input, label, span');
-        if (!el) return;
-        window.pushRecordedEvent({
-          type: 'click',
-          detail: {
-            tag: el.tagName,
-            text: el.innerText || '',
-            id: el.id || '',
-            name: el.name || '',
-            className: el.className || '',
-            href: el.href || '',
-            type: el.type || '',
-            selector: getSelector(el)
-          },
-          timestamp: Date.now()
-        });
-      });
-
-      window.addEventListener('input', (e) => {
-        const el = e.target;
-        window.pushRecordedEvent({
-          type: 'input',
-          detail: {
-            name: el.name || '',
-            value: el.value || '',
-            checked: el.checked || false,
-            tag: el.tagName.toLowerCase(),
-            type: el.type || '',
-            id: el.id || '',
-            className: el.className || '',
-            selector: getSelector(el)
-          },
-          timestamp: Date.now()
-        });
-      });
-    });
+    await page.evaluateOnNewDocument(setupRecorder, 'pushRecordedEvent');
 
     await page.goto(url, { waitUntil: 'domcontentloaded' });
     console.log(`🟢 Recording browser launched for: ${url}`);
