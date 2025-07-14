@@ -336,17 +336,36 @@ async function findAndClick(page, detail, targetText, stepIndex, screenshotDir, 
 
       if (curr.type === 'input') {
         if (curr.detail.type === 'checkbox' || curr.detail.type === 'radio') continue;
-        const sel = curr.detail.selector || `[name="${curr.detail.name}"]`;
+
+        const selectors = [];
+        if (curr.detail.selector) selectors.push(curr.detail.selector);
+        if (curr.detail.id && `#${curr.detail.id}` !== curr.detail.selector) selectors.push(`#${curr.detail.id}`);
+        if (curr.detail.name) selectors.push(`[name="${curr.detail.name}"]`);
+
         const val = curr.detail.value || '';
-        console.log(`➡️ Step ${i + 1}: Input "${val}" into "${sel}"`);
-        try {
-          const el = await page.waitForSelector(sel, { timeout: 3000 });
-          if (el) {
+
+        let el = null;
+        for (const sel of selectors) {
+          console.log(`➡️ Step ${i + 1}: Input "${val}" into "${sel}"`);
+          try {
+            el = await page.waitForSelector(sel, { timeout: 3000 });
+            if (el) break;
+          } catch {
+            /* try next selector */
+          }
+        }
+
+        if (el) {
+          try {
             await el.focus();
             await el.click({ clickCount: 3 });
             await el.type(val, { delay: 50 });
+          } catch {
+            el = null;
           }
-        } catch {
+        }
+
+        if (!el) {
           await handleFailure(page, i, testName, screenshotDir, `Could not input "${val}"`);
         }
       }
