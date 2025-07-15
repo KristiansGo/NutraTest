@@ -1,6 +1,15 @@
 const express = require('express');
 const puppeteer = require('puppeteer');
 const devices = puppeteer.devices;
+const deviceAliases = {
+  'Samsung Galaxy S9': 'Galaxy S9+',
+  'iPhone 11': 'iPhone 11',
+  'iPad': 'iPad'
+};
+
+function mapDevice(name) {
+  return deviceAliases[name] || name;
+}
 const fs = require('fs');
 const path = require('path');
 const { spawn } = require('child_process');
@@ -48,11 +57,14 @@ app.get('/tests', (req, res) => {
     const stats = fs.statSync(fullPath);
 
     let href = '';
+    let device = 'desktop';
     try {
       const content = fs.readFileSync(fullPath, 'utf-8');
       const session = JSON.parse(content);
-      const firstNav = session.find(event => event.type === 'navigate' && event.href);
+      const events = Array.isArray(session) ? session : session.events || [];
+      const firstNav = events.find(event => event.type === 'navigate' && event.href);
       href = firstNav ? firstNav.href : '';
+      device = mapDevice(Array.isArray(session) ? 'desktop' : session.device || 'desktop');
     } catch {
       href = '';
     }
@@ -63,6 +75,7 @@ app.get('/tests', (req, res) => {
     return {
       name,
       href,
+      device,
       mtime: stats.mtime,
       scheduled
     };
@@ -97,7 +110,7 @@ app.get('/run/:testName', (req, res) => {
 });
 
 app.post('/record', async (req, res) => {
-  const { url, testName: rawName, device } = req.body;
+  const { url, testName: rawName, device: inputDevice } = req.body;
   const testName = sanitizeTestName(rawName);
   if (!url || !rawName) return res.status(400).send('Missing URL or test name');
 
@@ -109,6 +122,8 @@ app.post('/record', async (req, res) => {
     href: url,
     timestamp: Date.now()
   }];
+  const recordedDevice = mapDevice(inputDevice || 'desktop');
+  const sessionData = { device: recordedDevice, events: recordedEvents };
 
   await fs.promises.writeFile(recordingStatusFile, JSON.stringify({ status: 'running', timestamp: new Date().toISOString() }));
   res.status(200).send('Recording started');
@@ -129,12 +144,12 @@ app.post('/record', async (req, res) => {
 
     const page = await browser.newPage();
 
-    if (device && device !== 'desktop') {
+    if (recordedDevice && recordedDevice !== 'desktop') {
       const availableDevices = Object.keys(devices);
-      if (devices[device]) {
-        await page.emulate(devices[device]);
+      if (devices[recordedDevice]) {
+        await page.emulate(devices[recordedDevice]);
       } else {
-        console.warn(`⚠️ Device descriptor for "${device}" not found`);
+        console.warn(`⚠️ Device descriptor for "${recordedDevice}" not found`);
         console.log(`🔍 Available devices: ${availableDevices.join(', ')}`);
       }
     }
@@ -152,7 +167,7 @@ app.post('/record', async (req, res) => {
 
     const saveSession = async (reason) => {
       try {
-        await fs.promises.writeFile(sessionFile, JSON.stringify(recordedEvents, null, 2));
+        await fs.promises.writeFile(sessionFile, JSON.stringify(sessionData, null, 2));
         console.log(`✅ Session saved: sessions/${testName}.json (${reason})`);
         await fs.promises.writeFile(recordingStatusFile, JSON.stringify({ status: 'stopped', timestamp: new Date().toISOString() }));
       } catch (err) {

@@ -1,4 +1,14 @@
 const puppeteer = require('puppeteer');
+const devices = puppeteer.devices;
+const deviceAliases = {
+  'Samsung Galaxy S9': 'Galaxy S9+',
+  'iPhone 11': 'iPhone 11',
+  'iPad': 'iPad'
+};
+
+function mapDevice(name) {
+  return deviceAliases[name] || name;
+}
 const { PuppeteerScreenRecorder } = require('puppeteer-screen-recorder');
 const fs = require('fs');
 const path = require('path');
@@ -252,8 +262,10 @@ async function findAndClick(page, detail, targetText, stepIndex, screenshotDir, 
     process.exit(1);
   }
 
-  const session = JSON.parse(fs.readFileSync(sessionFile, 'utf-8'));
-  if (!Array.isArray(session) || session.length === 0) {
+  const rawSession = JSON.parse(fs.readFileSync(sessionFile, 'utf-8'));
+  const events = Array.isArray(rawSession) ? rawSession : rawSession.events || [];
+  const device = mapDevice(Array.isArray(rawSession) ? 'desktop' : rawSession.device || 'desktop');
+  if (events.length === 0) {
     console.error('❌ Session file is empty or invalid');
     process.exit(1);
   }
@@ -277,11 +289,21 @@ async function findAndClick(page, detail, targetText, stepIndex, screenshotDir, 
   browser = await puppeteer.launch(launchOptions);
 
   const page = await browser.newPage();
-  await page.setViewport({ width: 1920, height: 1080 });
+  if (device && device !== 'desktop') {
+    const availableDevices = Object.keys(devices);
+    if (devices[device]) {
+      await page.emulate(devices[device]);
+    } else {
+      console.warn(`⚠️ Device descriptor for "${device}" not found`);
+      console.log(`🔍 Available devices: ${availableDevices.join(', ')}`);
+    }
+  } else {
+    await page.setViewport({ width: 1920, height: 1080 });
+  }
 
   const videoPath = path.join(screenshotDir, `${testName}-video.mp4`);
   recorder = new PuppeteerScreenRecorder(page);
-  await page.goto(session[0].href, { waitUntil: 'domcontentloaded', timeout: 15000 });
+  await page.goto(events[0].href, { waitUntil: 'domcontentloaded', timeout: 15000 });
   await page.bringToFront();
   await sleep(1000);
   console.log('🟡 Attempting to start video stream...');
@@ -311,11 +333,11 @@ async function findAndClick(page, detail, targetText, stepIndex, screenshotDir, 
     }
   });
 
-  let lastTimestamp = session[0].timestamp;
+  let lastTimestamp = events[0].timestamp;
   try {
-    for (let i = 0; i < session.length; i++) {
-      const curr = session[i];
-      const next = session[i + 1];
+    for (let i = 0; i < events.length; i++) {
+      const curr = events[i];
+      const next = events[i + 1];
 
       const dt = Math.min(curr.timestamp - lastTimestamp, 10000);
       lastTimestamp = curr.timestamp;
