@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 const li = document.createElement('li');
                 li.innerHTML = `
                     <div>
-                        <strong>${t.name}</strong><br/>
+                        <strong>${t.name}</strong> <span style="color:#666;">(${t.device})</span><br/>
                         <a href="${t.href}" target="_blank" style="font-size: 0.9em; color: #666; text-decoration: underline;">${t.href}</a>
                     </div>
                     <div>

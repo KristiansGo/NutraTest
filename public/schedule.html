@@ -85,7 +85,8 @@
             });
 
             label.appendChild(checkbox);
-            label.appendChild(document.createTextNode(` ${test.name}`));
+            const labelText = ` ${test.name}${test.device ? ' (' + test.device + ')' : ''}`;
+            label.appendChild(document.createTextNode(labelText));
 
             div.appendChild(label);
 

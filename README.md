@@ -32,11 +32,19 @@ periodically.
 
 Open your browser to `http://localhost:3000` and follow the on‑screen
 instructions to create a new test. When recording starts, a separate browser
-window is launched and all navigation, clicks and inputs are stored in `/sessions/<testName>.json`. Inputs in text fields are recorded after 300ms of inactivity, while checkboxes and radio buttons are saved immediately.
+window is launched and all navigation, clicks and inputs are stored in `/sessions/<testName>.json` along with the chosen device. Inputs in text fields are recorded after 300ms of inactivity, while checkboxes and radio buttons are saved immediately.
 
 Recorded tests can be replayed from the main page or scheduled to run at regular
-intervals from `/schedule`. Screenshots and logs produced during replay are
+intervals from `/schedule`. When a session is replayed, the saved device setting
+is automatically applied. Screenshots and logs produced during replay are
 stored in the `screenshots` directory.
+
+### Device emulation
+
+The device name selected when recording is matched against Puppeteer’s built-in
+descriptors. Friendly aliases are provided so options like `Samsung Galaxy S9`
+or `iPhone 11` work out of the box. If no descriptor is found the test falls
+back to desktop mode and a warning is logged.
 
 ## Click fallback configuration
 
