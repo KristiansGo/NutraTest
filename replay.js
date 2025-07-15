@@ -13,6 +13,9 @@ if (!testName) {
   process.exit(1);
 }
 
+const CLICK_TIMEOUT = parseInt(process.env.CLICK_TIMEOUT, 10) || 10000;
+const CLICK_RETRY_INTERVAL = parseInt(process.env.CLICK_RETRY_INTERVAL, 10) || 500;
+
 function getOption(flag, envVar, def = true) {
   if (process.env[envVar] !== undefined) {
     return !/^(false|0)$/i.test(process.env[envVar]);
@@ -231,8 +234,12 @@ async function findAndClick(page, detail, targetText, stepIndex, screenshotDir, 
     });
   }
 
-  for (const attempt of attempts) {
-    if (await attempt()) return true;
+  const end = Date.now() + CLICK_TIMEOUT;
+  while (Date.now() < end) {
+    for (const attempt of attempts) {
+      if (await attempt()) return true;
+    }
+    await sleep(CLICK_RETRY_INTERVAL);
   }
 
   await handleFailure(page, stepIndex, testName, screenshotDir, `Could not click "${targetText}"`);
