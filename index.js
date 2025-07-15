@@ -194,6 +194,22 @@ app.post('/record', async (req, res) => {
   }
 });
 
+app.post('/auto', (req, res) => {
+  const { url, device } = req.body;
+  if (!url) return res.status(400).send('Missing URL');
+
+  const args = ['autoRunner.js', url];
+  if (device) args.push(device);
+
+  const child = spawn('node', args, { stdio: ['ignore', 'pipe', 'pipe'] });
+
+  child.stdout.on('data', data => console.log(`[autoRunner stdout]: ${data}`));
+  child.stderr.on('data', data => console.error(`[autoRunner stderr]: ${data}`));
+  child.on('close', code => console.log(`autoRunner exited with code ${code}`));
+
+  res.json({ status: 'started' });
+});
+
 app.delete('/delete/:testName', (req, res) => {
   const testName = sanitizeTestName(req.params.testName);
   const filesToDelete = [

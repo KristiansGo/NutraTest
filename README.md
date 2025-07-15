@@ -11,6 +11,7 @@ periodically.
 - Replay recorded tests with screenshots and optional device emulation
 - Queue and schedule tests to run automatically
 - View test status and manage recorded sessions from the browser
+- Automatic exploratory mode for quickly crawling a URL
 
 ## Installation
 
@@ -68,6 +69,14 @@ keeps all fallbacks enabled, preserving the default behaviour.
 Each click is retried until the element becomes available. The default timeout
 is 10 seconds with a 500ms polling interval. Adjust these using the
 `CLICK_TIMEOUT` and `CLICK_RETRY_INTERVAL` environment variables.
+
+### Automatic mode
+
+Send a `POST` request to `/auto` with a JSON body containing a `url` and optional
+`device` to run a quick exploratory crawl. The browser navigates to the page,
+attempts to fill text inputs and follows a few links while capturing
+screenshots and logs in the `screenshots` directory. A simple form on the main
+page lets you trigger this mode from the browser.
 
 ## Directory overview
 

@@ -27,6 +27,20 @@
         <button type="submit" id="submitBtn">▶ Start Recording</button>
     </form>
 
+    <form id="autoForm" style="margin-top:2rem;" novalidate>
+        <h2>Automatic Mode</h2>
+
+        <label for="autoUrl">🔗 URL to test:</label>
+        <input type="text" name="url" id="autoUrl" placeholder="https://example.com" required>
+
+        <label for="autoDevice" style="display:block;margin-top:1rem;">Select device:</label>
+        <select name="device" id="autoDevice" style="margin-top:0.25rem;margin-bottom:1rem;"></select>
+
+        <button type="submit" id="autoBtn">▶ Run Automatically</button>
+    </form>
+
+    <div id="autoMessage" style="margin-bottom:2rem; font-weight:bold;"></div>
+
     <div id="recordMessage" style="margin-bottom: 2rem; font-weight: bold;"></div>
 
     <div class="test-list">

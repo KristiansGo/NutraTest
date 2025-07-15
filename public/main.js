@@ -1,5 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     const recordForm = document.getElementById('recordForm');
+    const autoForm = document.getElementById('autoForm');
+
+    const autoDeviceSelect = document.getElementById('autoDevice');
+    const autoMessage = document.getElementById('autoMessage');
+    const autoBtn = document.getElementById('autoBtn');
 
     // Create device label and selector dynamically
     const deviceLabel = document.createElement('label');
@@ -26,6 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
         option.value = d.value;
         option.textContent = d.name;
         deviceSelect.appendChild(option);
+        if (autoDeviceSelect) {
+            autoDeviceSelect.appendChild(option.cloneNode(true));
+        }
     });
 
     recordForm.insertBefore(deviceLabel, recordForm.querySelector('button'));
@@ -84,6 +92,41 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = false;
         }
     });
+
+    if (autoForm) {
+        autoForm.addEventListener('submit', async function (event) {
+            event.preventDefault();
+
+            const urlInput = this.url;
+            const device = autoDeviceSelect.value;
+            const url = urlInput.value.trim();
+            if (!url) {
+                alert('Please enter a URL.');
+                return;
+            }
+
+            autoBtn.disabled = true;
+            autoMessage.textContent = 'Running automatic test...';
+
+            try {
+                const res = await fetch('/auto', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ url, device })
+                });
+                if (res.ok) {
+                    autoMessage.textContent = 'Automatic run started.';
+                } else {
+                    autoMessage.textContent = 'Failed to start.';
+                }
+            } catch {
+                autoMessage.textContent = 'Error starting automatic run.';
+            }
+
+            autoBtn.disabled = false;
+            urlInput.value = '';
+        });
+    }
 
     // Existing code for listing tests remains unchanged
     fetch('/tests')
