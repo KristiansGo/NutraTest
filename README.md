@@ -57,6 +57,10 @@ Set an environment variable to `false` (e.g. `FIND_AND_CLICK_BY_NAME=false`) or
 use the corresponding `--no-` flag to disable that step. Omitting these options
 keeps all fallbacks enabled, preserving the default behaviour.
 
+Each click is retried until the element becomes available. The default timeout
+is 10 seconds with a 500ms polling interval. Adjust these using the
+`CLICK_TIMEOUT` and `CLICK_RETRY_INTERVAL` environment variables.
+
 ## Directory overview
 
 - `index.js` – Express server and HTTP API
